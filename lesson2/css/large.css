@@ -1,0 +1,33 @@
+@media only screen and (min-width: 80em) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main section:nth-child(3) {
+    grid-column: span 1;
+  }
+
+  main,
+  header,
+  footer {
+    max-width: 55%;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    align-items: center;
+  }
+
+  .contrast {
+    grid-column: 2 / 3;
+  }
+
+  .repetition {
+    grid-column: 3 / 4;
+  }
+  
+  footer {
+    font-size: 0.95rem;
+    text-align: center;
+    line-height: 0.5rem;
+  }
+}

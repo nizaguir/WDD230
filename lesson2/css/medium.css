@@ -1,0 +1,41 @@
+@media only screen and (min-width: 32.5em) {
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main section:nth-child(2) {
+    display: block;
+  }
+
+  main section:nth-child(3) {
+    grid-column: span 2;
+  }
+
+  .whiteSpace {
+    grid-column: 1 / 2;
+
+  }
+
+  .repetition {
+    grid-column: 2 / 3;
+  }
+
+  main section picture {
+    display: block;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  header,
+  footer {
+    border-radius: 10px;
+  }
+}
