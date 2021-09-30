@@ -7,7 +7,7 @@ header,
 footer {
   font-family: "Source Code Pro", monospace;
   background-color: #173753;
-  
+
   text-align: center;
   color: white;
   padding: 10px 0px 10px 0px;
@@ -37,6 +37,10 @@ h1 {
 
 h2 {
   font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+}
+
+h3 {
   font-size: 1rem;
 }
 
@@ -73,13 +77,15 @@ nav a:hover {
   background-color: #e3f2fd;
   color: black;
 }
+
 .active {
-	background-color: #e3f2fd;
+  background-color: #e3f2fd;
 }
 
 img {
   max-width: 100%;
 }
+
 footer a {
   color: #fafafa;
 }
@@ -89,63 +95,75 @@ footer p {
 }
 
 table {
-  width: 100%; 
-}
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+  width: 100%;
 }
 
-th, td {
+table,
+th,
+td {
+  border: 1px solid black;
+  
+}
+
+th,
+td {
   padding: 15px;
-  text-align: left;   
+  text-align: left;
   background-color: #f7f7f0;
 }
 
 
 /* color-scheme.html */
-#sh-sample, #t_sh-sample {
+#sh-sample,
+#t_sh-sample {
   font-family: "Source Code Pro";
   background-color: #173753;
   color: white;
   font-size: 40px;
 }
 
-#pn-sample, #t_pn-sample {
+#pn-sample,
+#t_pn-sample {
   font-family: "Monserrat", sans-serif;
   background-color: #d7816a;
-  color:black;
+  color: black;
   font-size: 16px;
 }
 
-#fn-sample, #t_fn-sample {
+#fn-sample,
+#t_fn-sample {
   font-family: "Source Code Pro", monospace;
   background-color: #173753;
   color: white;
   font-size: 16px;
 }
 
-#h1-sample, #t_h1-sample{
+#h1-sample,
+#t_h1-sample {
   font-family: "Source Code Pro", monospace;
   background-color: #173753;
   color: white;
   font-size: 30px;
 }
 
-#h2-sample, #t_h2-sample {
+#h2-sample,
+#t_h2-sample {
   font-family: "Source Code Pro", monospace;
   background-color: white;
   color: #3D5151;
   font-size: 25px;
 }
 
-#h3-sample, #t_h3-sample {
+#h3-sample,
+#t_h3-sample {
   font-family: "Source Code Pro", monospace;
   background-color: white;
   color: #3D5151;
   font-size: 20px;
 }
-#p-sample, #t_p-sample{
+
+#p-sample,
+#t_p-sample {
   font-family: "Monserrat", sans-serif;
   background-color: white;
   color: black;
@@ -165,25 +183,32 @@ ul.demographics {
 
 .persona1,
 .persona2 {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 
 .scenarios ul,
 .persona1 ul,
 .persona2 ul {
-    padding-left: 1.5rem;
-    padding-bottom: 1rem;
-    
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+
 }
 
 
 .card {
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 2rem;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
 }
 
 .personas {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+
+/* Table formating */
+.hscroll {
+  overflow-x: auto; /* Horizontal */
 }
