@@ -19,11 +19,11 @@ main,
 footer {
   max-width: 760px;
   margin: 0 auto;
-  text-align: center;
 }
 
 main {
   padding: 20px;
+  text-align: center;
 }
 
 nav,
@@ -101,6 +101,8 @@ th, td {
   text-align: left;   
   background-color: #f7f7f0;
 }
+
+
 /* color-scheme.html */
 #sh-sample, #t_sh-sample {
   font-family: "Source Code Pro";
@@ -152,4 +154,36 @@ th, td {
 
 ul.demographics {
   list-style-type: square;
+}
+
+
+
+/* Target Audience Page */
+.target-audience {
+  text-align: left;
+}
+
+.persona1,
+.persona2 {
+    margin-bottom: 1.5rem;
+}
+
+
+.scenarios ul,
+.persona1 ul,
+.persona2 ul {
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+    
+}
+
+
+.card {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.personas {
+    padding-bottom: 1rem;
 }
