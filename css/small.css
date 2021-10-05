@@ -37,6 +37,10 @@ footer p {
   margin-bottom: 0px;
 }
 
+footer a {
+  color: black;
+}
+
 header img {
   width: 200px;
   height: auto;
