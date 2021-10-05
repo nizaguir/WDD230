@@ -33,12 +33,13 @@ footer {
   text-align: center;
 }
 
-footer p {
-  margin-bottom: 0px;
-}
-
 footer a {
   color: black;
+}
+
+footer p {
+  margin: 0px;
+  padding: 5px;
 }
 
 header img {
