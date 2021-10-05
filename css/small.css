@@ -32,14 +32,16 @@ footer {
   background-color: #F09C42;
   text-align: center;
 }
-
+footer{
+  font-size: 14px;
+}
 footer a {
   color: black;
 }
 
 footer p {
   margin: 0px;
-  padding: 5px;
+  padding-top: 5px;
 }
 
 header img {
