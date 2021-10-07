@@ -1,4 +1,9 @@
 @media only screen and (min-width: 32.5em) {
+  main {
+    margin: 0 auto;
+    max-width: 70vw;
+  }
+
   .contentbox {
     background-color: #bed;
   }
@@ -26,7 +31,7 @@
   }
 
   footer {
-    font-size: 12px;
+    font-size: 13px;
     padding: 20px;
   }
 }
