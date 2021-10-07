@@ -16,11 +16,11 @@ nav,
 footer  */
 main {
   margin: 0 auto;
-  max-width: 60vw;
+  max-width: 70vw;
 }
 
 header {
-  padding: 5px 0;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +46,6 @@ header img {
 .headings h1 {
   font-size: 1.6rem;
   margin: 0 0 0 17px;
-  text-align: center;
 }
 
 .m {
@@ -87,7 +86,7 @@ nav {
   font-weight: 700;
 }
 
-.navigation a:hover {
+.navigation li:hover {
   color: black;
   background-color: #e3f2fd;
 }
@@ -96,14 +95,13 @@ nav {
   display: block;
 }
 
-nav ul li.active a {
+nav ul li.active  {
   background-color: #e3f2fd;
   color: black;
 }
-
 .ham {
-  font-size: 1.6rem;
-}
+  font-size: 1.2rem;
+} 
 
 nav,
 main p {
@@ -143,4 +141,5 @@ footer {
 
 footer p {
   margin: 0;
+  padding: 5px;
 }

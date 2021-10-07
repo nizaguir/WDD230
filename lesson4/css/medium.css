@@ -7,10 +7,10 @@
     display: flex;
   }
 
-  .navigation li {
+  .navigation > li {
     display: block;
     /* change state in small view */
-    flex: 1 1 auto;
+    flex: 1 1;
   }
 
   .navigation a {
@@ -21,7 +21,12 @@
     display: none;
   }
 
+  .headings h1{
+    text-align: center;
+  }
+
   footer {
-    font-size: 1rem;
+    font-size: 12px;
+    padding: 20px;
   }
 }
