@@ -1,0 +1,37 @@
+@media only screen and (min-width: 32.5em) {
+  main {
+    margin: 0 auto;
+    max-width: 70vw;
+  }
+
+  .contentbox {
+    background-color: #bed;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation > li {
+    display: block;
+    /* change state in small view */
+    flex: 1 1;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .headings h1{
+    text-align: center;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 20px;
+  }
+}
