@@ -26,7 +26,7 @@
   .headings h1 {
     text-align: left;
     font-size: 1.6rem;
-    margin: 0 0 0 80px;
+    margin: 0 0 0 65px;
   }
   
   /* footer Styling */
@@ -56,20 +56,31 @@
 
   footer .container-map {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    /* padding-right: 50px; */
   }
 
   footer .container-info {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left: 50px;
+    padding-left: 100px;
+    /* align-items: left; */
+  }
+
+
+  .container-info h3{
+    margin: 0;
+    font-size: 1.3rem;
+  } 
+  .contact-info p{
+    margin: 0;
+    padding-bottom: 0px;
   }
 
   footer .map {
     margin-top: 1.5rem;
-    width: 80%;
+    width: 65%;
   }
 
   /* Hero Styling */
@@ -102,18 +113,19 @@
     position: absolute;
     top: 50px;
     left: 50px;
-    background: rgb(23, 55, 83);
-    background: linear-gradient(90deg, rgba(23, 55, 83, 1) 0%, rgba(227, 242, 253, 1) 100%);
-    /* background: radial-gradient(circle, rgba(23, 55, 83, 1) 0%, rgba(227, 242, 253, 1) 100%); */
     border: rgba(23, 55, 83, 1);
+    border-radius: 5px;
     padding: 1rem;
-    box-shadow: 0 0 30px #ccc;
+    box-shadow: 0 0 20px #ccc;
     /* Change width of weather summary??? */
     width: 200px;
+    height: 120px;
   }
 
   .ws-table {
     color: black;
+    padding: .5px;
+    font-size: 14px;
   }
 
   .sum-data {

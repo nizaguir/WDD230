@@ -86,7 +86,7 @@ nav {
   text-align: center;
   text-decoration: none;
   color: black;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .navigation li:hover {
@@ -146,10 +146,18 @@ footer p {
   padding: 1rem;
   font-family: 'Montserrat', sans-serif;
 }
+.container-info h3{
+  margin: 0;
+  font-size: 1.3rem;
+} 
+
+.container-info{
+  padding: 10px;
+}
 
 footer p {
   font-size: 1rem;
-  padding-bottom: .5rem;
+  /* padding-bottom: .5rem; */
 }
 
 footer .contact-info {
@@ -163,11 +171,12 @@ footer .contact-info a,
 footer .contact-info p {
   text-decoration: none;
   color: black;
+  margin: 0;
   /* font-size: .8rem; */
 }
 
 footer .contact-info a:hover {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 footer .contact-info img {
@@ -181,7 +190,7 @@ footer .map {
 }
 
 footer .footer-bar {
-  height:30px;
+  height: 30px;
   background-color: #173753;
 }
 
@@ -190,7 +199,7 @@ footer .social-icons {
   margin-top: .5rem;
 }
 
-.footer-bar{
+.footer-bar {
   text-align: center;
   background-color: white;
   color: #fff;
@@ -207,12 +216,13 @@ footer .footer-bar a {
   text-decoration: none;
   color: #fff;
 }
+
 footer .footer-bar a:hover {
   text-decoration: none;
   color: white;
 }
 
-footer .social-icons img{
+footer .social-icons img {
   margin: .5rem;
   margin-bottom: 0;
   width: 30px;
@@ -258,12 +268,21 @@ footer .social-icons img{
   border: rgba(23, 55, 83, 1);
   padding: 1rem;
   /* box-shadow: 0 0 30px #ccc; */
+
+}
+
+.weathersummary h3{
+  margin-bottom: 5px;
+  margin-top: 0px;
+  /* padding: .5px; */
+  font-size: 1.2rem;
 }
 
 .ws-table {
   font-family: 'Montserrat', sans-serif;
   color: black;
   margin: 0 auto;
+  
 }
 
 .title-data {
@@ -298,7 +317,7 @@ footer .social-icons img{
 .flex-col,
 .column-col,
 .grid-col,
-.col-head  {
+.col-head {
   border-bottom: 1px solid #173753;
   border-left: 1px solid #173753;
   border-right: 1px solid #173753;
@@ -355,9 +374,9 @@ th {
 
 }
 
-.article-div img{
+.article-div img {
   display: block;
-  margin: 0px;
+  margin: 0;
 }
 
 /* Popup Banner  */
@@ -371,7 +390,9 @@ th {
   font-size: 1.2rem;
 }
 
-#more {display: none;}
+#more {
+  display: none;
+}
 
 
 #goTopBtn {
