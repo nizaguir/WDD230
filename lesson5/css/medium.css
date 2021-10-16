@@ -6,6 +6,7 @@
 
   .navigation {
     display: flex;
+    
   }
 
   .navigation>li {
@@ -23,9 +24,11 @@
   }
 
   .headings h1 {
-    text-align: center;
+    text-align: left;
+    font-size: 1.6rem;
+    margin: 0 0 0 80px;
   }
-
+  
   /* footer Styling */
 
   /* footer {
@@ -49,25 +52,25 @@
   footer .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
+  }
 
-footer .container-map {
+  footer .container-map {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-footer .container-info {
+  footer .container-info {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-left: 50px;
-}
+  }
 
-footer .map {
+  footer .map {
     margin-top: 1.5rem;
     width: 80%;
-}
+  }
 
   /* Hero Styling */
 
@@ -112,7 +115,7 @@ footer .map {
   .ws-table {
     color: black;
   }
-  
+
   .sum-data {
     color: black;
   }
@@ -121,7 +124,7 @@ footer .map {
   .article-div {
     margin: 10px auto;
     max-width: 70vw;
-    height: 500px;
+    /* height: 500px; */
     /* border: 1px solid black; */
     padding: 1rem;
     /* background-color: beige; */
