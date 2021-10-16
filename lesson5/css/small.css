@@ -298,7 +298,6 @@ footer .social-icons img {
 
 /* Forecast section Styling */
 
-
 .forecast-flex {
   display: flex;
   /* flex-direction: row; */
@@ -318,10 +317,10 @@ footer .social-icons img {
 .column-col,
 .grid-col,
 .col-head {
-  border-bottom: 1px solid #173753;
-  border-left: 1px solid #173753;
-  border-right: 1px solid #173753;
-  border: 1px solid #173753;
+  /* border-bottom: 1px solid #173753; */
+  /* border-left: 1px solid #173753; */
+  /* border-right: 1px solid #173753; */
+  /* border: 1px solid #173753; */
   text-align: center;
 }
 
