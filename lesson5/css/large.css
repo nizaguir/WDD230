@@ -3,8 +3,8 @@
     width: 95px;
     height: auto;
   }
-  
-  header{
+
+  header {
     padding: 1rem;
   }
 
@@ -18,7 +18,48 @@
     margin-left: 17px;
   }
 
-  .contentbox {
-    background-color: #ccc;
+  footer .map {
+    margin-top: 1.5rem;
+    width: 60%;
+}
+
+  /* Hero Styling */
+
+  /* .hero-div {
+    position: relative;
+    border: 1px solid cyan;
+    margin: 10px auto;
+    max-width: 70vw;
+    height: 350px;
   }
+
+  .hero-ph {
+    margin: 0 auto;
+    border: 1px dashed #000;
+    background-color: #ccc;
+    width: 100%;
+    height: 350px;
+    
+  }
+
+  #hero-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .weathersummary {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: rgb(23, 55, 83);
+    background: linear-gradient(90deg, rgba(23, 55, 83, 1) 0%, rgba(227, 242, 253, 1) 100%);
+    background: radial-gradient(circle, rgba(23, 55, 83, 1) 0%, rgba(227, 242, 253, 1) 100%);
+    border:rgba(23, 55, 83, 1);
+    padding: 0.5rem;
+    box-shadow: 0 0 30px #ccc;
+  } */
+
+
 }

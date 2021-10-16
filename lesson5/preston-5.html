@@ -4,19 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Preston Town Page</title>
+  <title>Preston Town | Today Will Be</title>
   <meta name="description"
-    content="Preston Town Page Assignment for Natalia Jensen in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    content="The Preston Town Page for the Today Will Be website. Information about the town and events " />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/small.css" />
+  <link rel="stylesheet" href="./css/medium.css" />
+  <link rel="stylesheet" href="./css/large.css" />
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro&display=swap" />
-  <link rel="stylesheet" href="css/small.css" />
-  <link rel="stylesheet" href="css/medium.css" />
-  <link rel="stylesheet" href="css/large.css" />
 </head>
 
 <body>
+
+  <div id="banner">
+    Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+  </div>
+
   <header>
     <picture>
       <img src="images/logo.png" alt="logo for todaywillbe.info" />
@@ -40,18 +45,172 @@
   </nav>
 
   <main>
-    <h2>Preston Idaho</h2>
-    <div class="contentbox forecast">Hero w/ Weather Summary</div>
-    <div class="contentbox">5 Day Forecast</div>
-    <div class="contentbox">Article</div>
-    <div class="contentbox">Contact Infomation</div>
+    <h2>The Town of Preston </h2>
+    <div class="hero-div">
+      <div class="hero-ph">
+        <!-- Image from https://www.pexels.com/photo/wood-road-dawn-landscape-9690306/  -->
+        <img id="hero-img" src="./images/preston-hero-img.jpg" alt="Preston hero img">
+
+        <section class="weathersummary">
+          <h3>Weather Summary</h3>
+          <!-- <p class="label">Currently:</p>
+          <p class="value">Sunny</p>
+          <p class="label">High:</p>
+          <p class="value">76 &deg;F</p>
+          <p class="label">Wind Chill:</p>
+          <p class="value">&deg;F</p>
+          <p class="label">Humidity:</p>
+          <p class="value">69%</p>
+          <p class="label">Wind Speed:</p>
+          <p class="value">5 mph</p> -->
+
+          <table class="ws-table">
+            <tr>
+              <td class="title-data">Currently: </td>
+              <td class="sum-data">Sunny</td>
+            </tr>
+            <tr>
+              <td class="title-data">High: </td>
+              <td class="sum-data"><span id="d-temp">75</span> &#176;F</td>
+            </tr>
+            <tr>
+              <td class="title-data">Wind Chill: </td>
+              <td class="sum-data"><span id="d-wind-c"></span> &#176;F</td>
+            </tr>
+            <tr>
+              <td class="title-data">Humidity: </td>
+              <td class="sum-data"><span id="d-humid">10</span>%</td>
+            </tr>
+            <tr>
+              <td class="title-data">Wind Speed: </td>
+              <td class="sum-data"><span id="d-wind-s">25</span> mph</td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </div>
+
+
+    <div class="forecast">
+      <h2>5 Day Forecast</h2>
+      <div class="forecast-flex">
+        <div class="flex-col">
+          <span class="col-head">Wed</span>
+          <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" alt="forecast sun image">
+          <span class="data">89&deg;F</span>
+        </div>
+        <div class="flex-col">
+          <span class="col-head">Thu</span>
+          <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" alt="forecast sun image">
+          <span class="data">87&deg;F</span>
+        </div>
+        <div class="flex-col">
+          <span class="col-head">Fri</span>
+          <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" alt="forecast sun image">
+          <span class="data">78&deg;F</span>
+        </div>
+        <div class="flex-col">
+          <span class="col-head">Sat</span>
+          <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" alt="forecast sun image">
+          <span class="data">75&deg;F</span>
+        </div>
+        <div class="flex-col">
+          <span class="col-head">Sun</span>
+          <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" alt="forecast sun image">
+          <span class="data">72&deg;F</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="article-div">
+      <h3>Spring = Family Time <br>
+        by: Jessica Pearson</h3>
+      <article class="articles">
+        <!-- Image from https://www.pexels.com/photo/a-man-and-a-woman-assisting-a-girl-while-jumping-1128317/ -->
+        <img src="./images/family-park.jpg" alt="A family in the park" />
+        <p>
+          Cupcake ipsum dolor sit amet croissant. Macaroon chocolate sesame snaps shortbread soufflé apple pie gummies.
+          Lemon drops pastry cotton candy cookie biscuit. Ice cream jelly-o cotton candy brownie danish cookie.
+          Croissant
+          dessert icing cheesecake bear claw danish gummies. Cheesecake jujubes tootsie roll lemon drops chocolate cake
+          topping. Donut marshmallow ice cream muffin muffin cookie jelly powder. Fruitcake tootsie roll gummi bears
+          topping croissant halvah carrot cake danish. Toffee tootsie roll sweet roll candy carrot cake marzipan
+          caramels.
+        </p>
+        <p>
+          Sweet halvah pie oat cake chupa chups donut. Chupa chups gummies sugar plum cake gummies chocolate. Pudding
+          jelly beans gingerbread gingerbread ice cream brownie gummi bears. Biscuit bear claw gummies liquorice sugar
+          plum tootsie roll cheesecake topping fruitcake. Marshmallow biscuit powder macaroon oat cake bear claw tart
+          caramels.
+        </p>
+        <p>
+          Muffin chupa chups bear claw jelly-o carrot cake liquorice. Marzipan fruitcake danish powder bear claw candy
+          jujubes. Liquorice tart donut macaroon topping dessert tiramisu. Gummi bears icing cupcake gummi bears
+          fruitcake
+          donut cookie. Marshmallow topping tart sweet roll chocolate bar jelly beans gummi bears cotton candy. Donut
+          cookie sesame snaps cotton candy topping oat cake. Marshmallow tootsie roll lemon drops chocolate bar soufflé
+          dragée sugar plum pie. Pie sugar plum chocolate pastry cake muffin sesame snaps marshmallow sweet roll.
+          Pudding
+          chocolate macaroon candy jelly. Powder halvah marzipan dessert carrot cake. Sweet jujubes marzipan brownie
+          croissant. Pastry macaroon ice cream gummi bears topping croissant. Shortbread jelly-o chocolate cake lollipop
+          cake.
+        </p>
+      </article>
+    </div>
+
+
   </main>
 
   <footer>
-    <p>&copy;Today Will Be | Attributions | Natalia Jensen </p>
-    <span id="currentdate"></span>
+    
+    <div class="footer-container">
+      <div class="container-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.4864527362315!2d-111.87576958447805!3d42.09705147920548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e967e1ebc7%3A0x14469667cfe31546!2s30%20N%201st%20E%2C%20Preston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1625727976797!5m2!1sen!2sus"
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="map">
+        </iframe>
+      </div>
+      <div class="container-info">
+        <p><strong>Today Will Be</strong></p>
+        <div class="contact-info position">
+          <img src="./images/location_on_black_24dp.png" alt="mail icon">
+          <p>30 N 1st E <br>Preston, ID 83623</p>
+        </div>
+        <div class="contact-info mail">
+          <img src="./images/email_black_24dp.png" alt="mail icon">
+          <!-- <a href="mailto:info@findtheweather.today">info@todaywillbe.com</a> -->
+          <a href="#">info@todaywillbe.com</a>
+        </div>
+        <div class="contact-info phone">
+          <img src="./images/phone_black_24dp.png" alt="mail icon">
+          <a href="#">959.469.9999</a>
+        </div>
+
+
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><img src="./images/facebook_icon.png" alt="facebook icon"></a>
+          <a href="https://instagram.com" target="_blank"><img src="./images/instagram_icon.png"
+              alt="instagram icon"></a>
+          <a href="https://twitter.com" target="_blank"><img src="./images/twitter_icon.png" alt="twitter icon"></a>
+          <!-- <a href="https://youtube.com" target="_blank"><img src="./images/youtube_icon.png" alt="youtube icon"></a> -->
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="footer-bar">
+      <span>&copy;2021 Today Will Be | Attributions | Natalia Jensen | </span>
+      <span id="currentdate"></span>
+    </div>
+
   </footer>
-  <script src="js/preston-4.js"></script>
+  <script defer src="./js/bannerad.js"></script>
+  <script src="./js/preston-4.js"></script>
 </body>
 
 </html>
