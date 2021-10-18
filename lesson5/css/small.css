@@ -320,7 +320,7 @@ footer .social-icons img {
   /* border-bottom: 1px solid #173753; */
   /* border-left: 1px solid #173753; */
   /* border-right: 1px solid #173753; */
-  /* border: 1px solid #173753; */
+  border: 1px solid #173753;
   text-align: center;
 }
 
@@ -387,12 +387,12 @@ th {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
+  /* display: none; */
 }
 
 #more {
   display: none;
 }
-
 
 #goTopBtn {
   display: none;
