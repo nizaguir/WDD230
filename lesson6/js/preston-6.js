@@ -10,14 +10,14 @@ hambutton.addEventListener(
 );
 
 // To solve the mid resizing issue with responsive class on
-window.onresize = () => {
-  if (window.innerWidth > 760) mainnav.classList.remove("responsive");
-};
+// window.onresize = () => {
+//   if (window.innerWidth > 760) mainnav.classList.remove("responsive");
+// };
 
 const datefield = document.querySelector("#currentdate");
 
 const now = new Date();
 const currentdate = new Intl.DateTimeFormat("en-US", {
-  dateStyle: "",
+  dateStyle: 'full'
 }).format(now);
 datefield.textContent = currentdate;
