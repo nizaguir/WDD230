@@ -46,39 +46,50 @@
   <main>
     <h2 id="main-title">The Town of Preston </h2>
     <div class="hero-div">
-      <div class="hero-ph">
+      <!-- <section class="hero-img"></section> -->
         <!-- Image from https://www.pexels.com/photo/wood-road-dawn-landscape-9690306/  -->
-        <img id="hero-img" src="./images/preston-hero-img.jpg" alt="Preston hero img">
+        <!-- <img id="hero-img" src="./images/preston-hero-img.jpg" alt="Preston hero img"> -->
 
-        <section class="weathersummary">
-          <h3>Weather Summary</h3>
-        
-          <table class="ws-table">
-            <tr>
-              <td class="title-data">Currently: </td>
-              <td class="sum-data">Sunny</td>
-            </tr>
-            <tr>
-              <td class="title-data">High: </td>
-              <td class="sum-data"><span id="d-temp">30</span> &#176;F</td>
-            </tr>
-            <tr>
-              <td class="title-data">Wind Chill: </td>
-              <td class="sum-data"><span id="d-wind-c"></span> &#176;F</td>
-            </tr>
-            <tr>
-              <td class="title-data">Humidity: </td>
-              <td class="sum-data"><span id="d-humid">10</span>%</td>
-            </tr>
-            <tr>
-              <td class="title-data">Wind Speed: </td>
-              <td class="sum-data"><span id="d-wind-s">25</span> mph</td>
-            </tr>
-          </table>
+        <picture class="hero-pic">
           
-        </section>
+          <source media="(min-width: 896px)" srcset="images/1000franklinoriginal.jpg">
 
-      </div>
+          <source media="(min-width: 520px)" srcset="images/800franklinoriginal.jpg">
+
+        
+          <img src="./images/400franklinoriginal.jpg" alt="preston-idaho">
+
+        </picture>
+      
+      <section class="weathersummary">
+        <h3>Weather Summary</h3>
+
+        <table class="ws-table">
+          <tr>
+            <td class="title-data">Currently: </td>
+            <td class="sum-data">Sunny</td>
+          </tr>
+          <tr>
+            <td class="title-data">High: </td>
+            <td class="sum-data"><span id="d-temp">30</span> &#176;F</td>
+          </tr>
+          <tr>
+            <td class="title-data">Wind Chill: </td>
+            <td class="sum-data"><span id="d-wind-c"></span> &#176;F</td>
+          </tr>
+          <tr>
+            <td class="title-data">Humidity: </td>
+            <td class="sum-data"><span id="d-humid">10</span>%</td>
+          </tr>
+          <tr>
+            <td class="title-data">Wind Speed: </td>
+            <td class="sum-data"><span id="d-wind-s">25</span> mph</td>
+          </tr>
+        </table>
+
+      </section>
+
+
     </div>
 
 
@@ -87,27 +98,27 @@
       <div class="forecast-flex">
         <div class="flex-col">
           <span class="col-head">Wed</span>
-          <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" alt="forecast sunny">
+          <img src="./images/sun.png" alt="forecast sunny">
           <span class="data">89&deg;F</span>
         </div>
         <div class="flex-col">
           <span class="col-head">Thu</span>
-          <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" alt="forecast sunny">
+          <img src="./images/sun.png" alt="forecast sunny">
           <span class="data">87&deg;F</span>
         </div>
         <div class="flex-col">
           <span class="col-head">Fri</span>
-          <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" alt="forecast sunny">
+          <img src="./images/sun.png" alt="forecast sunny">
           <span class="data">78&deg;F</span>
         </div>
         <div class="flex-col">
           <span class="col-head">Sat</span>
-          <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" alt="forecast sunny">
+          <img src="./images/sun.png" alt="forecast sunny">
           <span class="data">75&deg;F</span>
         </div>
         <div class="flex-col">
           <span class="col-head">Sun</span>
-          <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" alt="forecast sunny">
+          <img src="./images/sun.png" alt="forecast sunny">
           <span class="data">72&deg;F</span>
         </div>
       </div>
@@ -160,10 +171,10 @@
 
     <div class="footer-container">
       <div class="container-map">
-        <!-- <iframe
+        <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.4864527362315!2d-111.87576958447805!3d42.09705147920548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e967e1ebc7%3A0x14469667cfe31546!2s30%20N%201st%20E%2C%20Preston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1625727976797!5m2!1sen!2sus"
           width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="map">
-        </iframe> -->
+        </iframe>
       </div>
       <div class="container-info">
         <h3><strong>Today Will Be</strong></h3>
@@ -183,7 +194,8 @@
 
 
         <div class="social-icons">
-          <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook_icon.png" alt="facebook icon"></a>
+          <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook_icon.png"
+              alt="facebook icon"></a>
           <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram_icon.png"
               alt="instagram icon"></a>
           <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter_icon.png" alt="twitter icon"></a>
