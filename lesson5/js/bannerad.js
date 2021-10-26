@@ -1,13 +1,7 @@
+const bannerad = document.getElementById('banner');
+const newDateObj = new Date();
+const today = newDateObj.getDay();
 
-if (thedate.getDay() == 4) {
-  document.querySelector('#banner').style.display = "block";
+if (today == 5){
+    bannerad.style.display = "block";
 }
-
-
-// const bannerad = document.querySelector('#banner');
-// const newDateObj = new Date();
-// const today = newDateObj.getDay();
-
-// if (today == 4){
-//     bannerad.style.display = "block";
-// }
