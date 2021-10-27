@@ -14,7 +14,7 @@ const loadImages = (image) => {
   };
 };
 
-// first check to see if the Intersction Observer is supported
+// first check to see if the Intersection Observer is supported
 if ("IntersectionObserver" in window) {
   const imgObserver = new IntersectionObserver((items) => {
     items.forEach((item) => {
