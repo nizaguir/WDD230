@@ -1,4 +1,4 @@
-body, .gallery {
+main, .gallery {
   display: flex;
   flex-direction: column;
   justify-content: center;
