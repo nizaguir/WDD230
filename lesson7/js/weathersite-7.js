@@ -56,6 +56,31 @@ images.forEach(image => {
 });
 
 
+
+
+// Check if the IntersactionObserver is supported
+// if('IntersectionObserver' in window) {
+//   const imgObserver = new IntersectionObserver((items, observer) => {
+//       items.forEach((item) => {
+//           if(item.isIntersecting) {
+//               loadImages(item.target);
+//               observer.unobserve(item.target);
+//           }
+//       });
+//   }, imgOptions);
+//   imagesToLoad.forEach((img) => {
+//       imgObserver.observe(img);
+//   });
+// } else { // justl load all images if not supported
+//   imagesToLoad.forEach((img) => {
+//       loadImages(img);
+//   });
+// };
+
+
+
+
+
 // ----REVIEW AND CHECK IF ANY OF THIS CODE SNIPPETS ARE NECESSARY
 
 // TOGGLE MENU

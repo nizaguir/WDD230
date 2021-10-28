@@ -437,16 +437,9 @@ th {
 }
 
 /* GALLERY PAGE */
-
-/* .full-width-gallery {
-  max-width: 70vw;
-  margin: 0 auto;
-} */
-
-.gallery-image {
-  /* filter: drop-shadow(0 0 0.1rem #000); */
-  /* background-color: #fff; */
-  /* overflow: hidden; */
+figure.gallery-image {
+  width:fit-content;
+  overflow: hidden;
   border-radius: 3px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
 }
@@ -466,6 +459,8 @@ section.gallery {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-bottom: 100px;
+  justify-items: center
+  
 }
 
 
@@ -483,6 +478,3 @@ section.gallery {
   animation-name: fadeIn;
   animation-duration: 3s;
 }
-
-
-/*  */

@@ -138,10 +138,15 @@
   .sum-data {
     color: black;
   }
+  
+  .forecast{
+    margin: 50px auto;
+  }
 
   /* Article Section Styling */
   .article-div {
-    margin: 10px auto;
+    /* margin: 10px auto; */
+    margin: 50px auto;
     max-width: 70vw;
     /* height: 500px; */
     /* border: 1px solid black; */
