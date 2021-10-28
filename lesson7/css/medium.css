@@ -1,0 +1,182 @@
+@media only screen and (min-width: 32.5em) {
+  main {
+    margin: 0 auto;
+    max-width: 70vw;
+  }
+
+  .navigation {
+    display: flex;
+    /* align-items: center; */
+    
+  }
+
+  .navigation>li {
+    display: block;
+    /* change state in small view */
+    flex: 1 1;
+  
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .headings h1 {
+    text-align: left;
+    font-size: 1.6rem;
+    margin: 0 0 0 65px;
+  }
+
+  h3{
+    font-size: 23px;
+  }
+  
+  /* footer Styling */
+
+  /* footer {
+    font-size: 13px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 70vw;
+  }
+
+
+  .footer-bar {
+    display: block;
+    text-align: center;
+  } */
+
+  .footer-bar span,
+  .footer-bar a {
+    font-size: .9rem;
+  }
+
+  footer .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer .container-map {
+    display: flex;
+    justify-content: right;
+    /* padding-right: 50px; */
+  }
+
+  footer .container-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+    /* align-items: left; */
+  }
+
+
+  .container-info h3{
+    margin: 0;
+    font-size: 1.3rem;
+  } 
+  .contact-info p{
+    margin: 0;
+    padding-bottom: 0px;
+  }
+
+  footer .map {
+    margin-top: 1.5rem;
+    width: 80%;
+    height: 80%;
+  }
+
+  /* Hero Styling */
+
+  .hero-div {
+    position: relative;
+    /* border: 1px solid cyan; */
+    margin: 10px auto;
+    max-width: 70vw;
+    /* height: 350px; */
+  }
+/* 
+  .hero-ph {
+    margin: 0 auto;
+    border: 1px dashed #000;
+  background-color: #ccc;
+    width: 100%;
+    height: 350px;
+  } */
+
+  /* #hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  } */
+
+
+  .weathersummary {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: rgba(23, 55, 83, 1);
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 20px #ccc;
+    /* Change width of weather summary??? */
+    width: 200px;
+    height: 120px;
+  }
+
+  .ws-table {
+    color: black;
+    /* padding: 5px; */
+    font-size: 14px;
+  }
+
+  .sum-data {
+    color: black;
+  }
+
+  /* Article Section Styling */
+  .article-div {
+    margin: 10px auto;
+    max-width: 70vw;
+    /* height: 500px; */
+    /* border: 1px solid black; */
+    padding: 2.5rem;
+    /* background-color: beige; */
+    /* margin: 0; */
+    /* padding: .3rem; */
+    background-color: #eee;
+    /* font: 1rem 'Fira Sans', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+    border-radius: 25px;
+  }
+
+  .article-div img {
+    float: right;
+    padding: 0 0 16px 16px;
+  }
+
+  /* GALLERY PAGE */
+
+  .gallery-image:hover {
+    margin: 5px;
+    filter: drop-shadow(0 0 0.3rem #000);
+    background-color: #fff;
+  }
+
+
+
+
+
+
+
+}
