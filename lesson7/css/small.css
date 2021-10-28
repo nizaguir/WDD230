@@ -420,7 +420,7 @@ th {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 20px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -433,7 +433,7 @@ th {
 }
 
 #goTopBtn:hover {
-  background-color: #555;
+  background-color: #e3f2fd;
 }
 
 /* GALLERY PAGE */
