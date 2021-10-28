@@ -20,12 +20,14 @@ const currentdate = new Intl.DateTimeFormat("en-US", {
 datefield.textContent = currentdate;
 
 // GALLERY PAGE LAZY LOADING 
+
 // get all data-src refs
 const images = document.querySelectorAll("img[data-src]");
 
+// Optional parameters for the IntersectionalObject
 const imgOptions = {
-  threshold: 1,
-  rootMargin: "0px 0px -30px 0px"
+  threshold: 0,
+  rootMargin: "0px 0px 50px 0px"
 }
 
 function preloadImage(img) {

@@ -446,7 +446,8 @@ th {
 .gallery-image {
   /* filter: drop-shadow(0 0 0.1rem #000); */
   /* background-color: #fff; */
-  /* border-radius: 10px; */
+  /* overflow: hidden; */
+  border-radius: 3px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -458,22 +459,17 @@ th {
   padding: 8px;
 }
 
-main .gallery {
+section.gallery {
   display: block;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  border-radius: 30px;
   padding-bottom: 100px;
 }
 
-/* .gallery-image:hover {
-  filter: drop-shadow(0 0 0.3rem #000);
-  background-color: #fff;
-} */
 
-/* @keyframes fadeIn {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -485,8 +481,8 @@ main .gallery {
 
 .fadeIn {
   animation-name: fadeIn;
-  animation-duration: 5s;
+  animation-duration: 3s;
 }
- */
+
 
 /*  */
