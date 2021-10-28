@@ -11,7 +11,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 h2 {
@@ -42,7 +42,7 @@ header {
 
 header,
 footer {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #173753;
   color: white;
 }
@@ -60,13 +60,16 @@ header img {
 .headings h1 {
   font-size: 1.6rem;
   margin: 0 0 0 17px;
+  letter-spacing: 4px;
 }
+main .page-title{
+  padding: 30px;
+} 
 
 .m {
   font-style: italic;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 1.5pt;
-  letter-spacing: 1pt;
+  letter-spacing: 1px;
   color: white;
   margin-left: 20px;
   font-size: 0.9rem;
@@ -204,7 +207,6 @@ footer .map {
 }
 
 footer .footer-bar {
-  height: 30px;
   background-color: #173753;
 }
 
@@ -435,34 +437,40 @@ th {
 }
 
 /* GALLERY PAGE */
-.full-width-gallery {
+
+/* .full-width-gallery {
   max-width: 70vw;
   margin: 0 auto;
-}
+} */
 
 .gallery-image {
-  margin: 5px;
-  filter: drop-shadow(0 0 0.1rem #000);
-  background-color: #fff;
+  /* filter: drop-shadow(0 0 0.1rem #000); */
+  /* background-color: #fff; */
+  /* border-radius: 10px; */
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
 .gallery-cap {
   background-color: #fff;
   text-align: center;
-  /* font-family: var(--t-text); */
+  font-family: Montserrat;
+  font-style: italic;
   padding: 8px;
 }
 
-.gallery {
+main .gallery {
+  display: block;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  border-radius: 30px;
+  padding-bottom: 100px;
 }
 
-/* .gallery-image picture a img {
-  width: 300px;
-  height: 300px;
+/* .gallery-image:hover {
+  filter: drop-shadow(0 0 0.3rem #000);
+  background-color: #fff;
 } */
 
 /* @keyframes fadeIn {

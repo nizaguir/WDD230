@@ -166,12 +166,12 @@
   }
 
   /* GALLERY PAGE */
-
-  .gallery-image:hover {
-    margin: 5px;
-    filter: drop-shadow(0 0 0.3rem #000);
-    background-color: #fff;
+  main .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+
+
 
 
 

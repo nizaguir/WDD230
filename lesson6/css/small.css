@@ -59,6 +59,9 @@ header img {
   font-size: 1.6rem;
   margin: 0 0 0 17px;
 }
+main .page-title{
+  padding: 30px;
+}
 
 .m {
   font-style: italic;
@@ -69,6 +72,7 @@ header img {
   margin-left: 20px;
   font-size: 0.9rem;
 }
+
 
 nav {
   margin: 0 auto;
