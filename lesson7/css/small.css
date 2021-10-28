@@ -449,7 +449,7 @@ th {
 .gallery-cap {
   background-color: #fff;
   text-align: center;
-  font-family: var(--t-text);
+  /* font-family: var(--t-text); */
   padding: 8px;
 }
 
@@ -460,12 +460,12 @@ th {
   justify-content: space-evenly;
 }
 
-.gallery-image picture a img {
+/* .gallery-image picture a img {
   width: 300px;
   height: 300px;
-}
+} */
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -477,8 +477,8 @@ th {
 
 .fadeIn {
   animation-name: fadeIn;
-  animation-duration: 2s;
+  animation-duration: 5s;
 }
-
+ */
 
 /*  */
