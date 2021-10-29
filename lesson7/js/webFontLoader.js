@@ -1,7 +1,7 @@
 WebFont.load({
   google: {
     families: [
-      'Montserrat', 'Ubuntu','sans-serif', 'Poppins'
+      'Montserrat','Poppins','Ubuntu','sans-serif',
     ]
   }
 });
