@@ -62,9 +62,10 @@ header img {
   margin: 0 0 0 17px;
   letter-spacing: 4px;
 }
-main .page-title{
+
+main .page-title {
   padding: 30px;
-} 
+}
 
 .m {
   font-style: italic;
@@ -438,11 +439,18 @@ th {
 
 /* GALLERY PAGE */
 figure.gallery-image {
-  width:fit-content;
   overflow: hidden;
   border-radius: 3px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  min-height: 300px;
 }
+
+figure.gallery-image img {
+  max-width: 250px;
+  min-height: 300px;
+}
+
 
 .gallery-cap {
   background-color: #fff;
@@ -460,7 +468,6 @@ section.gallery {
   justify-content: space-evenly;
   padding-bottom: 100px;
   justify-items: center
-  
 }
 
 
