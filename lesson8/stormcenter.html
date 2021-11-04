@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Today Will Be | Storm Center </title>
+  <meta name="description"
+    content="The Storm CenterPage for the website Todaywillbe.net. Here users will find a form to submit storm related cases" />
+  <link rel="shortcut icon" href="../lesson6/wfavicon.ico" />
+  <link rel="stylesheet" href="../lesson6/css/normalize.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro&display=swap" />
+  <link rel="stylesheet" href="./css/small.css" />
+  <link rel="stylesheet" href="./css/medium.css" />
+  <link rel="stylesheet" href="./css/large.css" />
+  <script defer src="../lesson6/js/bannerad.js"></script>
+</head>
+
+<body>
+  <div class="banner hidden">
+    Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+  </div>
+
+  <header>
+    <div id="h-logo">
+      <picture>
+        <source media="(min-width: 760px)" srcset="../lesson6/images/logo.png">
+        <img src="../lesson6/images/logo.png" alt="todaywillbe.info logo">
+      </picture>
+    </div>
+    <div id="h-text">
+      <h1 id="header-text">Today Will Be</h1>
+      <div id="tag-line">The weather forecast you didn't know you need</div>
+    </div>
+  </header>
+
+  <div class="welcome-banner banner hidden"></div>
+
+  <nav>
+    <ul class="full-width navigation">
+      <li class="nav-li"><a href="#" onclick="toggleMenu()">
+          <span class="button">&#8801; MENU</span></a></li>
+      <li class="nav-li"><a href="#">Home</a></li>
+      <li class="nav-li"><a href="../lesson6/preston-6.html">Preston</a></li>
+      <li class="nav-li"><a href="#">Soda Springs</a></li>
+      <li class="nav-li"><a href="#">Haven</a></li>
+      <li class="nav-li active"><a href="./stormcenter.html">Storm Center</a></li>
+      <li class="nav-li"><a href="../lesson7/gallery-7.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main class="full-width">
+    <h2 class="page-title">Storm Center</h2>
+
+    <form name="storm-form" class="storm-form" action="thankyou.html">
+        <div class="input-section">
+            <label for="full-name">Full Name</label>
+            <input pattern="(.*[A-Za-z]){5}" type="text" name="fullName" id="full-name" placeholder="full name" required>
+        </div>
+
+        <div class="input-section">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email@address.com" minlength="3" maxlength="64" required>
+        </div>
+
+        <div class="input-section">
+            <label for="phone-number">Phone Number</label>
+            <input type="tel"  name="phoneNumber" id="phone-number" placeholder="000-000-0000" required>
+        </div>
+
+        <div class="input-section">
+            <label for="zip-code">Zip Code</label>
+            <input type="number" id="zip-code" placeholder="00000" required>
+        </div>
+
+        <div class="input-section">
+            <label for="storm-date">Storm Date</label>
+            <input type="date" name="stormDate" id="storm-date" value="">
+        </div>
+
+        <div class="input-section">
+            <label for="storm">Storm Type</label>
+                <input type="text" list="storm-type" name="storm" id="storm" placeholder="select one ...">
+                <datalist id="storm-type">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunder Storm">
+                    <option value="Tornado">
+                    <option value="Sharknado"></option>
+                </datalist>
+        </div>
+
+        <div class="input-section">
+                <label for="storm-r" id="storm-r-label">Storm Severity</label>
+                <input type="range" name="storm-r" id="storm-r" step="0.5" min="0" max="10">       
+                <span id="storm-r-value">5</span>
+        </div>
+
+        <div class="input-section">
+            <label for="storm-region">Storm Region</label>
+            <select name="stormRegion" id="storm-region">
+                <option selected="selected" disabled>Select Region ...</option>
+                <option value="preston">Preston</option>
+                <option value="soda-springs">Soda Springs</option>
+                <option value="fish-haven">Fish Haven</option>
+            </select>
+        </div>
+
+        <fieldset class="input-section fs-sec">
+            <legend>User In-Danger</legend>
+            <div class="radio">
+                <input type="radio" name="danger" value="yes" id="yes" class="radio-btn">
+                <label for="yes">Yes</label>
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="danger" value="maybe" id="maybe" class="radio-btn">
+                <label for="maybe">Maybe</label>
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="danger" value="no" id="no" class="radio-btn">
+                <label for="no">No</label>
+            </div>
+        </fieldset>
+
+        <div class="input-section">
+            <label for="comments">Additional Information:</label><br>
+            <textarea name="comments" id="comments"></textarea>
+        </div>
+        <div class="input-section">
+            <input type="submit" value="Submit" class="submit submit-div">
+        </div>
+    </form>
+</main>
+
+  <footer class="full-width-gallery gallery-footer">
+    <span id="last-updated"></span><br>
+    &copy; Today Will Be | Attributions | Natalia I. Jensen <br>
+    <span id="currentdate"></span>
+
+  </footer>
+
+
+  <script src="./js/lastUpdated.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="./webFontLoader.js"></script>
+  <script src="./js/modal.js" defer></script>
+  <script src="./js/stormCenter.js"></script>
+
+</body>
+</html>
