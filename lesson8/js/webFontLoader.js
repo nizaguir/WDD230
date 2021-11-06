@@ -1,7 +1,7 @@
 WebFont.load({
   google: {
     families: [
-      "Source Code Pro", "monospace"
+      'Montserrat','Poppins','Ubuntu','sans-serif',
     ]
   }
 });

@@ -172,20 +172,12 @@
   section.gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 80px; 
+    column-gap: 80px;
   }
 
   figure.gallery-image:hover {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
     transition: box-shadow 250ms;
   }
-
-
-
-
-
-
-
-
 
 }

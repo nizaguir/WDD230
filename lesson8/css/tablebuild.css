@@ -16,7 +16,8 @@ thead tr:first-child th{
   background-color: #7fb9c2;
   color: black;
   padding: 15px;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  font-weight:bold;
 }
 
 th, td {
