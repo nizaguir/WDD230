@@ -9,13 +9,15 @@
   }
 
   header, footer {
-    border-radius: 25px;
+    border-radius: 15px;
   }
 
   header img {
     float: right;
     border-radius: 50% 20% / 10% 40%;
-    box-shadow: 0 20px 10px 0 #A36B1D;
+    /* box-shadow: 0 20px 10px 0 #A36B1D; */
+    box-shadow: 0 10px 10px 0 #dba860;
+
   }
   
 }

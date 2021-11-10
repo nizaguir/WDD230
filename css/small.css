@@ -27,7 +27,7 @@ footer {
 
 header,
 footer {
-  border: 1px solid #bbb;
+  border: 1px solid #db8e3c;
   padding: 1rem;
   background-color: #F09C42;
   text-align: center;
@@ -49,3 +49,6 @@ header img {
   height: auto;
 }
 
+li{
+  padding: 4px;
+}
