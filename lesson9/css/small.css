@@ -727,3 +727,10 @@ form label.top input:required:valid {
   height: 200wpx;
   overflow: auto;
 } */
+.container-map.map {
+  max-width: 400px;
+  max-height: 250px;
+  overflow: none;
+  /* object-fit: contain; */
+
+}
