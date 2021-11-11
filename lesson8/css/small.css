@@ -1,3 +1,16 @@
+/* :root {
+  --h-text: "Source Code Pro", monospace;
+  --t-text: "Montserrat", sans-serif;
+  --text-color: black;
+  --text-color-2: white;
+  --accent-color: #E3F2FD;
+  --accent-color-wheat: wheat;
+  --bg-1: #173753;
+  --bg-2: #d7816a;
+} */
+
+/* * {box-sizing: border-box;} */
+
 /* ----- GENERAL Header, Nav, Main, Footer ------ */
 
 /* header,

@@ -1,14 +1,19 @@
-// TOGGLE MENU
-const hambutton = document.querySelector(".ham");
-const mainnav = document.querySelector(".navigation");
+function toggleMenu() { //With old html this is the one working. 
+  document.getElementsByClassName('navigation')[0].classList.toggle('responsive');
+}
 
-hambutton.addEventListener(
-  "click",
-  () => {
-    mainnav.classList.toggle("responsive");
-  },
-  false
-);
+
+// TOGGLE MENU
+// const hambutton = document.querySelector(".ham");
+// const mainnav = document.querySelector(".navigation");
+
+// hambutton.addEventListener(
+//   "click",
+//   () => {
+//     mainnav.classList.toggle("responsive");
+//   },
+//   false
+// );
 
 // CURRENT DATE FIELD ON FOOTER
 // const datefield = document.querySelector("#currentdate");

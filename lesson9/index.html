@@ -40,54 +40,30 @@
     </ul>
   </nav>
 
-  <main class="full-width">
-    <h2 class="page-title">Home</h2>
+  <main>
+    <h2 class="home page-title">Welcome</h2>
 
     <section class="hero-img">
       <picture>
         <source media="(min-width: 650px)" srcset="./images/rsz_large_hero6-img.jpg">
         <source media="(min-width: 420px)" srcset="./images/medium_hero6-img.jpg">
-        <img src="images/small_hero6-img.jpg" alt="sample image for lesson 6">
+        <!-- <img src="images/small_hero6-img.jpg" alt="sample image for lesson 6"> -->
       </picture>
     </section>
 
 
-    <section class="home-towns"></section>
-
-    <section class="home-article">
-      <h2 class="home-main-h2">Articles</h2>
-      <div class="home-news"></div>
+    <section class="home-towns">
+      <!-- Preston,,, Towns info -->
     </section>
-    <section class="address-sec">
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.4864527362315!2d-111.87576958447805!3d42.09705147920548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e967e1ebc7%3A0x14469667cfe31546!2s30%20N%201st%20E%2C%20Preston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1625727976797!5m2!1sen!2sus"
-          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-      <div class="contact">
-        <div class="contact-inner">
-          <div class="address">
-            <h2>Today Will Be</h2>
-            <p><i class="fas fa-map-marker-alt"></i> 30 N 1st E</p>
-            <p>Preston, ID 83263</p>
 
-          </div>
-          <br>
-          <div class=phone-email>
-            <i class="#"></i> 959.469.9999
-            <br>
-            <i class="#"></i> todaywillbe@info.com
-          </div>
-          <br>
-          <div class="social">
-            <i class="#"></i>
-            <i class="#"></i>
-            <i class="#"></i>
-            <i class="#"></i>
-          </div>
-        </div>
-      </div>
+
+    <h2 class="home events-title">Upcoming Town Events</h2>
+    <section class="home-events">
+      <!-- Towns Events  -->
+      
+     
     </section>
+    
 
   </main>
 
@@ -101,7 +77,7 @@
         </iframe>
       </div>
       <div class="container-info">
-        <h3><strong>Today Will Be</strong></h3>
+        <h3 class="footer-h">Today Will Be</h3>
         <div class="contact-info position">
           <img src="./images/general/location_on_black_24dp.png" alt="location icon">
           <p>30 N 1st E <br>Preston, ID 83623</p>
@@ -143,7 +119,8 @@
   <script src="./js/webFontLoader.js"></script>
   <!-- NEW -->
   <script src="./js/lastvisit.js"></script>
-  <script src="./js/rating.js"></script>
+  <script src="./js/townsApi.js"></script>
+
 </body>
 
 </html>
