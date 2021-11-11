@@ -566,9 +566,10 @@ form label.sbs #rating{
   display: block;
   padding: .75rem 0;
 }
-form fieldset .radio
+form fieldset .radio {
   color: black;
 }
+
 form label textarea {
   display: block;
   padding: .8rem;

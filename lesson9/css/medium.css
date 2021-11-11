@@ -1,41 +1,45 @@
 /* ----- tablet view (36 em) -------------------------- */
-@media only screen and (min-width: 36em) {
-  :root {
-    --h-text: "Source Code Pro", monospace;
-    --t-text: "Montserrat", sans-serif;
-    --text-color: black;
-    --text-color-2: white;
-    --accent-color: #E3F2FD;
-    --accent-color-wheat: wheat;
-    --bg-1: #173753;
-    --bg-2: #d7816a;
-  }
+@media only screen and (min-width: 32.5em) {
+    :root {
+        /*  'Montserrat','Poppins','Ubuntu','sans-serif' */
+        --h-text: 'Poppins', sans-serif;
+        --t-text: "Montserrat", sans-serif;
+        --text-color: black;
+        --text-color-2: white;
+        --accent-color: #E3F2FD;
+        --accent-color-wheat: wheat;
+        --bg-1: #173753;
+        --bg-2: #E07A5F;
+    }
 
-  th {
-    font-family: var(--t-text);
-    font-size: 16px;
-    background-color: var(--accent-color-wheat);
-    color: var(--bg-2);
-    padding: 5px;
-  }
+    /* * {box-sizing: border-box;} */
 
-  .forecast {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      display: block;
-      text-align: center;
-  }
 
-  .weather-summary {
-    position: absolute;
-    width: 200px;
-    top: 20px;
-    left: 20px;
-    margin-top: 0;
-    background-color: thistle;
-  }
+    th {
+        font-family: var(--t-text);
+        font-size: 16px;
+        background-color: var(--accent-color-wheat);
+        color: var(--bg-2);
+        padding: 5px;
+    }
 
-  /* .forecast-table {
+    .forecast {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    .weather-summary {
+        position: absolute;
+        width: 200px;
+        top: 20px;
+        left: 20px;
+        margin-top: 0;
+        background-color: thistle;
+    }
+
+    /* .forecast-table {
       margin: 0 auto;
       margin-top: 8px;
       width: 500px;
@@ -49,72 +53,72 @@
       padding-bottom: 8px;
   } */
 
-  .map {
-      min-width: 50%;
-  }
+    .map {
+        min-width: 50%;
+    }
 
-  .map iframe {
-      display: block;
-      width: 100%; 
-      height: 100%;
-      border: 0;
-  }
-  
-  .quill-hide {
-      display: block;
-  }
+    .map iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
 
-  .input-section {
-      flex-direction: row;
-      padding: 8px;
-      font-family: var(--t-text);
-      margin: 0 auto;
-      max-width: 500px;
-  }
+    .quill-hide {
+        display: block;
+    }
 
-  .input-section label {
-      width: 180px;
-      padding: 8px;
-  }
-  
-  .input-section input {
-      width: 100%;
-  }
+    .input-section {
+        flex-direction: row;
+        padding: 8px;
+        font-family: var(--t-text);
+        margin: 0 auto;
+        max-width: 500px;
+    }
 
-  .input-section textarea {
-      width: 100%;
-  }
+    .input-section label {
+        width: 180px;
+        padding: 8px;
+    }
 
-  .input-section select {
-      width: 100%;
-  }
+    .input-section input {
+        width: 100%;
+    }
 
-  .fs-sec {
-      margin-top: 20px;
-      margin-bottom: 25px;
-  }
+    .input-section textarea {
+        width: 100%;
+    }
 
-  .town-div {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-  }
+    .input-section select {
+        width: 100%;
+    }
 
-  .town-div:nth-child(odd) {
-      flex-direction: row-reverse;
-  } 
+    .fs-sec {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
 
-  .town-div img {
-      padding: 0;
-      filter: drop-shadow(0 0 0 #000);
-  }
+    .town-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 
-  #storm-r-value {
-      width: 40px;
-  }
+    .town-div:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
 
-  #storm-r {
-      width: 450px;
-  }
+    .town-div img {
+        padding: 0;
+        filter: drop-shadow(0 0 0 #000);
+    }
+
+    #storm-r-value {
+        width: 40px;
+    }
+
+    #storm-r {
+        width: 450px;
+    }
 }
