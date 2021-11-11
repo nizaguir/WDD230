@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | Today Will Be </title>
-  <meta name="description" content="Home Page for Today Will Be. Quick overview and information on the towns of preston, Soda Springs, and Haven." />
+  <meta name="description"
+    content="Home Page for Today Will Be. Quick overview and information on the towns of preston, Soda Springs, and Haven." />
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/small.css" />
-  <!-- <link rel="stylesheet" href="./css/medium.css" />
-  <link rel="stylesheet" href="./css/large.css" /> -->
+  <link rel="stylesheet" href="./css/medium.css" />
+  <link rel="stylesheet" href="./css/large.css" />
   <link rel="shortcut icon" href="./favicon.ico" />
 </head>
 
@@ -20,7 +21,7 @@
 
   <header>
     <picture>
-      <img src="images/general/logo.png" alt="logo for todaywillbe.info" >
+      <img src="images/general/logo.png" alt="logo for todaywillbe.info">
     </picture>
     <section class="headings">
       <h1>Today Will Be</h1>
@@ -31,7 +32,7 @@
     <ul class="full-width navigation">
       <li class="nav-li"><a href="#" onclick="toggleMenu()">
           <span class="button">&#8801; MENU</span></a></li>
-      <li class="nav-li active"><a href="#">Home</a></li>
+      <li class="nav-li active"><a href="../lesson9/index.html">Home</a></li>
       <li class="nav-li"><a href="../lesson6/preston-6.html">Preston</a></li>
       <li class="nav-li"><a href="#">Soda Springs</a></li>
       <li class="nav-li"><a href="#">Haven</a></li>
@@ -43,15 +44,21 @@
   <main>
     <h2 class="home page-title">Welcome</h2>
 
-    <section class="hero-img">
+    <!-- <section class="hero-img">
       <picture>
         <source media="(min-width: 650px)" srcset="./images/rsz_large_hero6-img.jpg">
         <source media="(min-width: 420px)" srcset="./images/medium_hero6-img.jpg">
         <img src="images/small_hero6-img.jpg" alt="sample image for lesson 6">
       </picture>
-    </section>
+    </section> -->
 
+    <picture class="hero-pic">
+      <source media="(min-width: 896px)" srcset="images/1000franklinoriginal.jpg">
+      <source media="(min-width: 520px)" srcset="images/800franklinoriginal.jpg">
+      <img src="./images/small_hero6-img.jpg" alt="preston-idaho">
+    </picture>
 
+    <h2 class="home info-title">Town Information</h2>
     <section class="home-towns">
       <!-- Preston,,, Towns info -->
     </section>
@@ -60,10 +67,7 @@
     <h2 class="home events-title">Upcoming Town Events</h2>
     <section class="home-events">
       <!-- Towns Events  -->
-      
-     
     </section>
-    
 
   </main>
 
@@ -71,10 +75,7 @@
 
     <div class="footer-container">
       <div class="container-map">
-        <!-- <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.4864527362342!2d-111.87576958455196!3d42.097051479205426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e967e1ebc7%3A0x14469667cfe31546!2s30%20N%201st%20E!5e0!3m2!1sen!2sus!4v1635290145559!5m2!1sen!2sus"
-          width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="map">
-        </iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.4864527362342!2d-111.87576958455196!3d42.097051479205426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e967e1ebc7%3A0x14469667cfe31546!2s30%20N%201st%20E!5e0!3m2!1sen!2sus!4v1636605345409!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <div class="container-info">
         <h3 class="footer-h">Today Will Be</h3>
@@ -107,7 +108,7 @@
 
     <div class="footer-bar">
       <span>&copy;2021 Today Will Be | Attributions | Natalia Jensen | </span>
-      <span id="currentdate"></span> <br>
+      <span id="currentdate"></span> | 
       <span> Last visit:
         <span id="last-visit"></span> days
       </span>
