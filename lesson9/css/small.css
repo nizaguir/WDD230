@@ -39,6 +39,7 @@ h3,
 h4 {
   font-family: 'Poppins', sans-serif;
 }
+
 h3,
 h4 {
   margin: 0;
@@ -194,10 +195,10 @@ footer p {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  
+
 }
 
-.container-info .footer-h{
+.container-info .footer-h {
   margin: 0;
   font-size: 1.3rem;
 }
@@ -238,7 +239,7 @@ footer .contact-info img {
   margin-right: 0.8rem;
 }
 
-footer .container-map{
+footer .container-map {
   max-width: 300px;
   margin: 0 auto;
   grid-column: 1 / 1;
@@ -266,7 +267,7 @@ footer .social-icons {
 
 .footer-bar span,
 .footer-bar a {
-  font-size: 0.5rem;
+  font-size: 0.7rem;
 }
 
 footer .footer-bar a {
@@ -521,19 +522,20 @@ section.gallery {
 }
 
 
-/* ----------- STORM CENTER PAGE | REPORT A STORM FORM ------------  */ 
-.home.page-title{
+/* ----------- STORM CENTER PAGE | REPORT A STORM FORM ------------  */
+.home.page-title {
   letter-spacing: 5px;
   margin: 0;
 }
-.form-container{
+
+.form-container {
   max-width: 760px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .storm-form {
   margin: 0 auto;
-  font-family: "Monserrat" ,sans-serif;
+  font-family: "Monserrat", sans-serif;
   /* margin-bottom: 20px; */
   /* background-color: #E07A5F; */
   /* background-color:#e3f2fd; */
@@ -554,13 +556,16 @@ form legend {
   padding: 0 .5rem;
 }
 
-form label.top, form label.sbs, form div{
+form label.top,
+form label.sbs,
+form div {
   display: block;
   padding-top: 1rem;
   color: #9F3214;
 }
 
-form label.top input, form label.top select{
+form label.top input,
+form label.top select {
   -webkit-appearance: none;
   display: block;
   font-size: 1rem;
@@ -573,10 +578,11 @@ form label.top input, form label.top select{
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-form label.sbs #rating{
+form label.sbs #rating {
   display: block;
   padding: .75rem 0;
 }
+
 form fieldset .radio {
   color: black;
 }
@@ -638,11 +644,12 @@ form label.top input:required:valid {
 
 
 .town-div {
-  border: 2px solid var(--bg-1);
+  /* border: 2px solid var(--bg-1); */
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: whitesmoke;
 }
 
 .town-img {
@@ -669,7 +676,7 @@ form label.top input:required:valid {
   background-color: var(--bg-1);
   font-size: 18px;
   text-align: center;
-  padding: 10px 0 ;
+  padding: 10px 0;
   margin: 0;
   /* margin-bottom: 10px; */
 }
@@ -684,9 +691,9 @@ form label.top input:required:valid {
 }
 
 /* ---- HOME PAGE - ARTICLE SECTION */
-.events-title, .info-title {
-  background-color: var(--bg-1);
-  color: white;
+.events-title,
+.info-title {
+  color: black;
   padding: 20px;
   font-size: 1.3rem;
   margin-bottom: 0;
