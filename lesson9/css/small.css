@@ -647,13 +647,6 @@ form label.top input:required:valid {
 
 /* ----- HOME page styling ------- */
 
-/* .home-p {
-  font-family: var(--t-text);
-  padding: 12px;
-  background-color: white;
-} */
-
-
 .town-div {
   border: none;
   border-radius: 10px;
@@ -700,8 +693,8 @@ form label.top input:required:valid {
   text-align: center;
   font-size: 16px;
   font-style: italic;
-  padding-left: 30px;
-  padding-right: 30px;
+  /* padding-left: 30px;
+  padding-right: 30px; */
   margin-bottom: 12px;
 }
 
@@ -731,6 +724,6 @@ form label.top input:required:valid {
   /* text-decoration-style: dotted #D5C020; */
 }
 
-p-event {
+.town-event p {
   font-size: 14px;
 }

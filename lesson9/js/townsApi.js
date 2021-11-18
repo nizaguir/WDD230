@@ -21,13 +21,13 @@ fetch(townsRequestURL)
         // decide with image to use based on name
         switch (towns[i].name) {
           case "Soda Springs":
-            townImage = "./images/sodasprings.jpg";
+            townImage = "./images/test-img-2.jpg";
             break;
           case "Fish Haven":
-            townImage = "./images/fishhaven.jpg";
+            townImage = "./images/test-img-1.jpg";
             break;
           case "Preston":
-            townImage = "./images/preston.jpg";
+            townImage = "./images/test-img-3.jpg";
             break;
         }
 
