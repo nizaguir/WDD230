@@ -68,6 +68,11 @@ header img {
   /* height: auto; */
 }
 
+picture{
+  width: 70px;
+  height: 70px;
+}
+
 .headings {
   display: flex;
   flex-direction: column;
