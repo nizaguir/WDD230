@@ -200,6 +200,7 @@ footer p {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
+  margin-top: 50px;
 
 }
 
@@ -709,32 +710,22 @@ form label.top input:required:valid {
   padding-bottom: 0px
 }
 
-/* .home-main-h2 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.home-article h2 {
-  margin-top: 16px;
-}
-
-.home-article-div {
-  line-height: 1.2em;
-  margin-top: 20px;
-}
-
-.home-news {
-  height: 200wpx;
-  overflow: auto;
-} */
-/* .container-map.map {
-  max-width: 400px;
-  max-height: 250px;
-  overflow: none;
-} */
-
 #frame {
   border: 3px dotted;
   width: 300px;
   height: 300px;
+}
+
+
+.town-event {
+  margin: 30px auto;
+}
+
+.h3-title {
+  text-decoration: underline #D5C020 3px;
+  /* text-decoration-style: dotted #D5C020; */
+}
+
+p-event {
+  font-size: 14px;
 }
