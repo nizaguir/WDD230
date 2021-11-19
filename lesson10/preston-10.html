@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div id="banner" style="display: none;">
+  <div id="banner">
     Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the City Park Pavilion.
   </div>
 
@@ -27,67 +27,61 @@
       <h1>Today Will Be</h1>
       <q class="m">The weather forecast you didn't know you need</q>
     </section>
+    <!-- <button class="responsiveBtn">&#9776;</button> -->
+    <div class="menu-container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
   </header>
   <nav>
-    <ul class="full-width navigation">
-      <li class="nav-li"><a href="#" onclick="toggleMenu()">
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">
           <span class="button">&#8801; MENU</span></a></li>
-      <li class="nav-li active"><a href="../lesson9/index.html">Home</a></li>
-      <li class="nav-li"><a href="../lesson6/preston-6.html">Preston</a></li>
-      <li class="nav-li"><a href="#">Soda Springs</a></li>
-      <li class="nav-li"><a href="#">Haven</a></li>
-      <li class="nav-li "><a href="../lesson8/stormcenter.html">Storm Center</a></li>
-      <li class="nav-li"><a href="../lesson7/gallery-7.html">Gallery</a></li>
+      <li><a class="active" href="../lesson9/index.html">Home</a></li>
+      <li><a href="../lesson6/preston-6.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Haven</a></li>
+      <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+      <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
     </ul>
   </nav>
 
   <main>
     <h2 class="page-title">The Town of Preston </h2>
     <div class="hero-div">
-      <!-- <section class="hero-img"></section> -->
-      <!-- Image from https://www.pexels.com/photo/wood-road-dawn-landscape-9690306/  -->
-      <!-- <img id="hero-img" src="./images/preston-hero-img.jpg" alt="Preston hero img"> -->
-
       <picture class="hero-pic">
-
         <source media="(min-width: 896px)" srcset="images/1000franklinoriginal.jpg">
-
         <source media="(min-width: 520px)" srcset="images/800franklinoriginal.jpg">
-
-
-        <img src="./images/400franklinoriginal.jpg" alt="preston-idaho">
-
+        <img src="./images/400-preston.jpg" alt="preston-idaho">
       </picture>
 
       <section class="weathersummary">
         <h3>Weather Summary</h3>
-
         <table class="ws-table">
           <tr>
             <td class="title-data">Currently: </td>
-            <td class="sum-data">Sunny</td>
+            <td class="sum-data currentWeather"></td>
           </tr>
           <tr>
             <td class="title-data">High: </td>
-            <td class="sum-data"><span id="d-temp">30</span> &#176;F</td>
+            <td class="sum-data highTemp"></td>
           </tr>
           <tr>
             <td class="title-data">Wind Chill: </td>
-            <td class="sum-data"><span id="d-wind-c"></span> &#176;F</td>
+            <td class="sum-data wind-chill"></td>
           </tr>
           <tr>
             <td class="title-data">Humidity: </td>
-            <td class="sum-data"><span id="d-humid">10</span>%</td>
+            <td class="sum-data humidity"></td>
           </tr>
           <tr>
             <td class="title-data">Wind Speed: </td>
-            <td class="sum-data"><span id="d-wind-s">25</span> mph</td>
+            <td class="sum-data wind-speed"></td>
           </tr>
         </table>
-
       </section>
-
-
     </div>
 
 
@@ -95,30 +89,31 @@
       <h2 id='forecast-h2'>5 Day Forecast</h2>
       <div class="forecast-flex">
         <div class="flex-col">
-          <span class="col-head">Wed</span>
-          <img src="./images/sun.png" alt="forecast sunny">
-          <span class="data">89&deg;F</span>
+          <span class="col-head day-name"></span>
+          <img src="./images/sun.png" alt="" class="weat-img">
+          <span class="data forc"></span>
         </div>
         <div class="flex-col">
-          <span class="col-head">Thu</span>
-          <img src="./images/sun.png" alt="forecast sunny">
-          <span class="data">87&deg;F</span>
+          <span class="col-head day-name"></span>
+          <img src=./images/sun.png alt="" class="weat-img">
+          <span class="data forc"></span>
         </div>
         <div class="flex-col">
-          <span class="col-head">Fri</span>
-          <img src="./images/sun.png" alt="forecast sunny">
-          <span class="data">78&deg;F</span>
+          <span class="col-head day-name"></span>
+          <img src=./images/sun.png alt="" class="weat-img">
+          <span class="data forc"></span>
         </div>
         <div class="flex-col">
-          <span class="col-head">Sat</span>
-          <img src="./images/sun.png" alt="forecast sunny">
-          <span class="data">75&deg;F</span>
+          <span class="col-head day-name"></span>
+          <img src=./images/sun.png alt="" class="weat-img">
+          <span class="data forc"></span>
         </div>
         <div class="flex-col">
-          <span class="col-head">Sun</span>
-          <img src="./images/sun.png" alt="forecast sunny">
-          <span class="data">72&deg;F</span>
+          <span class="col-head day-name"></span>
+          <img src=./images/sun.png alt="" class="weat-img">
+          <span class="data forc"></span>
         </div>
+
       </div>
     </div>
 
@@ -126,24 +121,21 @@
     <div class="article-div">
 
       <article class="articles">
-        <h3>Spring = Family Time </h3>
-        <h4>by: Jessica Pearson</h4>
-        <!-- Image from https://www.pexels.com/photo/a-man-and-a-woman-assisting-a-girl-while-jumping-1128317/ -->
-        <img src="./images/family-park.jpg" alt="A family in the park" />
+        <div class="article-heading">
+          <h3>Spring = Family Time </h3>
+          <h4>by: Jessica Pearson</h4>
+        </div>
+        <img src="./images/preston-park.jpg" alt="A family in the park" class="article-img" />
         <p>
-          Cupcake ipsum dolor sit amet croissant. Macaroon chocolate sesame snaps shortbread soufflé apple pie gummies.
-          Lemon drops pastry cotton candy cookie biscuit. Ice cream jelly-o cotton candy brownie danish cookie.
-          Croissant dessert icing cheesecake bear claw danish gummies. Cheesecake jujubes tootsie roll lemon drops
-          chocolate cake
-          topping. Donut marshmallow ice cream muffin muffin cookie jelly powder. Fruitcake tootsie roll gummi bears
-          topping croissant halvah carrot cake danish. Toffee tootsie roll sweet roll candy carrot cake marzipan
-          caramels.
+          Spending time partaking in everyday family leisure activities has been associated with greater emotional bonding within families. Both "core" leisure activities, such as playing a board game, watching television, gardening or playing outdoors and "balance" activities, which require a greater investment of planning, time and money, such as a family vacation or trip to an amusement park or sporting event, can have a big impact on the overall health of a family, according to research published by the National Council on Family Relations. <span id="dots">...</span>
         </p>
         <p>
-          Sweet halvah pie oat cake chupa chups donut. Chupa chups gummies sugar plum cake gummies chocolate. Pudding
-          jelly beans gingerbread gingerbread ice cream brownie gummi bears. Biscuit bear claw gummies liquorice sugar
-          plum tootsie roll cheesecake topping fruitcake. Marshmallow biscuit powder macaroon oat cake bear claw tart
-          caramels <span id="dots">...</span>
+          <span id="more">
+            Sweet halvah pie oat cake chupa chups donut. Chupa chups gummies sugar plum cake gummies chocolate. Pudding
+            jelly beans gingerbread gingerbread ice cream brownie gummi bears. Biscuit bear claw gummies liquorice sugar
+            plum tootsie roll cheesecake topping fruitcake. Marshmallow biscuit powder macaroon oat cake bear claw tart
+            caramels
+          </span>
         </p>
 
         <p>
@@ -205,18 +197,14 @@
     <div class="footer-bar">
       <span>&copy;2021 Today Will Be | Attributions | Natalia Jensen | </span>
       <span id="currentdate"></span>
-      <span> | Last visit:
-        <span id="last-visit"></span> days
-      </span>
     </div>
   </footer>
 
-
-  <script src="./js/preston-6.js"></script>
-  <script src="./js/bannerad.js"></script>
-  <script src="./js/windchill.js"></script>
+  <script src="./js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="./js/webFontLoader.js"></script>
+  <!-- NEW -->
+  <script src="./weather.js"></script>
 </body>
 
 </html>

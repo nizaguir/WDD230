@@ -13,7 +13,7 @@ fetch(apiURL)
         // Add high temperature
         let tempKelvHigh = jsObject.list[0].main.temp_max;
         let tempFarHigh = kelToFar(tempKelvHigh);
-        document.querySelector('.temperature').textContent = `${tempFarHigh} °F`;
+        document.querySelector('.highTemp').textContent = `${tempFarHigh} °F`;
 
         // Add humidity
         document.querySelector('.humidity').textContent = `${jsObject.list[0].main.humidity}%`
@@ -32,13 +32,13 @@ fetch(apiURL)
         const today = currentDate.getDay();
 
         const days = {
-            0: 'SUN',
-            1: 'MON',
-            2: 'TUE',
-            3: 'WED',
-            4: 'THUR',
-            5: 'FRI',
-            6: 'SAT',
+            0: 'Sun',
+            1: 'Mon',
+            2: 'Tue',
+            3: 'Wed',
+            4: 'Thur',
+            5: 'Fri',
+            6: 'Sat',
         }
 
         let today_char;

@@ -1,39 +1,42 @@
-function toggleMenu() { //With old html this is the one working. 
-  document.getElementsByClassName('navigation')[0].classList.toggle('responsive');
+function toggleMenu() {
+  //With old html this is the one working.
+  document
+    .getElementsByClassName("navigation")[0]
+    .classList.toggle("responsive");
 }
 
+// HAM responsive Menu /  toggle open/close in the small view
 
-// TOGGLE MENU
-// const hambutton = document.querySelector(".ham");
-// const mainnav = document.querySelector(".navigation");
+// const navHam = document.querySelector('.responsiveBtn');
+// const mainNav = document.querySelector('.navigation');
 
-// hambutton.addEventListener(
-//   "click",
-//   () => {
-//     mainnav.classList.toggle("responsive");
-//   },
-//   false
-// );
+// navHam.addEventListener('click', toggleMenu)
 
-// CURRENT DATE FIELD ON FOOTER
-// const datefield = document.querySelector("#currentdate");
+// function toggleMenu() {
+//     mainNav.classList.toggle('navigation');
+// }
 
-// const now = new Date();
-// const currentdate = new Intl.DateTimeFormat("en-US", {
-//   dateStyle: 'full'
-// }).format(now);
-// datefield.textContent = currentdate;
+// DISPLAY CURRENT DATE ON FOOTER
+const options = {
+  weekday: "long",
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+};
 
-// Create a new Date object and inject in the DOM the current date
-const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
-
-document.querySelector('#currentdate').innerHTML = new Date().toLocaleDateString('en-US', options);
+document.querySelector("#currentdate").innerHTML =
+  new Date().toLocaleDateString("en-US", options);
 
 // SHOW BANNER AD ON FRIDAY
-const bannerad = document.getElementById('banner');
+const bannerad = document.getElementById("banner");
 const newDateObj = new Date();
 const today = newDateObj.getDay();
 
-if (today == 5){
-    bannerad.style.display = "block";
+if (today == 5) {
+  bannerad.style.display = "block";
+}
+
+// ANIMATED MENU BAR
+function myFunction(x) {
+  x.classList.toggle("change");
 }
