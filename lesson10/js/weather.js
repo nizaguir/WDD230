@@ -83,7 +83,7 @@ fetch(apiURL)
         }) 
     });
 
-// Custom Functions
+// Calculate Wind Chill
 const calcWindChill = (temperature, windSpeed) => {
     let windChillVal;
 
