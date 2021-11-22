@@ -1,0 +1,20 @@
+main, .gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Dosis', sans-serif;
+
+}
+
+
+picture img {
+  filter: blur(0em);
+  transition: filter 1s;
+  padding: 1rem;
+
+}
+
+/* picture img[data-src] {
+  filter: blur(.2em);
+} */

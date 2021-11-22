@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Today Will Be </title>
+  <meta name="description"
+    content="Home Page for Today Will Be. Quick overview and information on the towns of preston, Soda Springs, and Haven." />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/small.css" />
+  <link rel="stylesheet" href="./css/medium.css" />
+  <link rel="stylesheet" href="./css/large.css" />
+  <link rel="shortcut icon" href="./favicon.ico" />
+</head>
+
+<body>
+  <div id="banner" style="display: none;">
+    Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the City Park Pavilion.
+  </div>
+
+  <header>
+    <picture>
+      <img src="images/general/logo.png" alt="logo for todaywillbe.info">
+    </picture>
+    <section class="headings">
+      <h1>Today Will Be</h1>
+      <q class="m">The weather forecast you didn't know you need</q>
+    </section>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">
+          <span class="button">&#8801; MENU</span></a></li>
+      <li class="active"><a href="../lesson11/index.html">Home</a></li>
+      <li><a href="../lesson11/preston/preston.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Haven</a></li>
+      <li><a href="../lesson11/storm_center/stormcenter.html">Storm Center</a></li>
+      <li><a href="../lesson11/gallery/gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 class="home page-title">Welcome!</h2>
+    <picture class="hero-pic">
+      <source media="(min-width: 896px)" srcset="images/1000franklinoriginal.jpg">
+      <source media="(min-width: 520px)" srcset="images/800franklinoriginal.jpg">
+      <img src="./images/hero-small.jpg" alt="preston-idaho">
+    </picture>
+
+    <h2 class="home info-title">▾ Town Information ▾</h2>
+    <div class="home-towns">
+      <!-- Preston,,, Towns info -->
+    </div>
+
+
+    <h2 class="home events-title">▾ Upcoming Town Events ▾</h2>
+
+    <div class="town-events">
+      <!-- Towns Events  -->
+      <div class="town-events-info">
+        <!-- <section>
+          <h3></h3>
+          <p></p>
+        </section> -->
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer>
+
+    <div class="footer-container">
+      <div class="container-map">
+        <img class="map" src="./images/general/today_will_be_map.jpg" alt="the location of today will be headquarters">
+        <!-- <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.4864527362342!2d-111.87576958455196!3d42.097051479205426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e967e1ebc7%3A0x14469667cfe31546!2s30%20N%201st%20E!5e0!3m2!1sen!2sus!4v1636605345409!5m2!1sen!2sus"
+          width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+      </div>
+      <div class="container-info">
+        <h3 class="footer-h">Today Will Be</h3>
+        <div class="contact-info position">
+          <img src="./images/general/location_on_black_24dp.png" alt="location icon">
+          <p>30 N 1st E <br>Preston, ID 83623</p>
+        </div>
+        <div class="contact-info mail">
+          <img src="./images/general/email_black_24dp.png" alt="email icon">
+          <!-- <a href="mailto:info@findtheweather.today">info@todaywillbe.com</a> -->
+          <a href="#">info@todaywillbe.com</a>
+        </div>
+        <div class="contact-info phone">
+          <img src="./images/general/phone_black_24dp.png" alt="phone icon">
+          <a href="tel:123-456-7890">959.469.9999</a>
+        </div>
+
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"><img src="./images/general/facebook_icon.png"
+              alt="facebook icon"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="./images/general/instagram_icon.png"
+              alt="instagram icon"></a>
+          <a href="https://www.twitter.com" target="_blank"><img src="./images/general/twitter_icon.png"
+              alt="twitter icon"></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer-bar">
+      <span>&copy;2021 Today Will Be | Attributions | Natalia Jensen | </span>
+      <span id="currentdate"></span>
+      <span> | Last visit:
+        <span id="last-visit"></span> days
+      </span>
+    </div>
+
+  </footer>
+  <script src="./js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="./js/webFontLoader.js"></script>
+  <!-- NEW -->
+  <script src="./js/lastvisit.js"></script>
+  <script src="./js/townsApi.js"></script>
+  <script src="./js/events.js"></script>
+
+</body>
+
+</html>
