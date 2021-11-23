@@ -62,16 +62,17 @@
     font-size: 1rem;
   }
 
-
-  footer .map {
-    margin-top: 1.5rem;
-    width: 70%;
-    height: 80%;
-  }
+  /* ----- TOWN PAGES ------ */
 
   .weathersummary {
     top: 50px;
     left: 50px;
+  }
+  
+  /* GALLERY */
+  section.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
 
