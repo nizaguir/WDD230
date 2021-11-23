@@ -1,13 +1,17 @@
-/* :root {
-  --h-text: "Source Code Pro", monospace;
+:root {
+  /*  'Montserrat','Poppins','Ubuntu','sans-serif' */
+  --h-text: 'Poppins', sans-serif;
   --t-text: "Montserrat", sans-serif;
   --text-color: black;
   --text-color-2: white;
   --accent-color: #E3F2FD;
+  --accent-color-green: #D5C020;
   --accent-color-wheat: wheat;
   --bg-1: #173753;
-  --bg-2: #d7816a;
-} */
+  --bg-2: #E07A5F;
+  --bg-t: #E96C49;
+
+}
 
 /* * {box-sizing: border-box;} */
 
@@ -27,7 +31,7 @@ main {
   margin-bottom: 0;
 } */
 
-main .page-title {
+.page-title {
   padding: 30px;
 }
 
@@ -38,6 +42,7 @@ h3,
 h4 {
   font-family: 'Poppins', sans-serif;
 }
+
 h3,
 h4 {
   margin: 0;
@@ -45,7 +50,7 @@ h4 {
 }
 
 header {
-  padding: 5px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,13 +68,18 @@ header img {
   /* height: auto; */
 }
 
+header picture {
+  width: 70px;
+  height: 70px;
+}
+
 .headings {
   display: flex;
   flex-direction: column;
 }
 
 .headings h1 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin: 0 0 0 17px;
   letter-spacing: 4px;
 }
@@ -80,8 +90,9 @@ header img {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
   color: white;
-  margin-left: 20px;
-  font-size: 0.9rem;
+  margin-left: 10px;
+  /* font-size: 0.9rem; */
+  font-size: 12px;
 }
 
 /* ----------------- '<a>' LINKS ------------------ */
@@ -95,7 +106,7 @@ a {
 /* ---------------- NAVIGATION -------------------- */
 nav {
   margin: 0 auto;
-  background-color: #E07A5F;
+  background-color: var(--bg-t);
 }
 
 .navigation {
@@ -119,7 +130,6 @@ nav {
   text-align: center;
   text-decoration: none;
   color: black;
-  /* font-weight: 700; */
 }
 
 .navigation li:hover {
@@ -131,7 +141,7 @@ nav {
   display: block;
 }
 
-nav ul li.active {
+.active {
   background-color: #e3f2fd;
   color: black;
 }
@@ -140,6 +150,55 @@ nav ul li.active {
   font-size: 1.2rem;
 }
 
+/* ---------- MENU ICON BUTTON --------- */
+/* .responsiveBtn li {
+  display: block;
+} */
+/* header button {
+  border: none;
+  background-color: var(--accent-color-green);
+  color: white;
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+} */
+.menu-container {
+  display: inline-block;
+  cursor: pointer;
+  padding: 3px;
+
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: var(--accent-color-green);
+  margin: 6px 0;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* -------------  GENRAL PAGE - -------- */
 nav,
 main p {
   font-family: "Montserrat", sans-serif;
@@ -173,28 +232,40 @@ footer p {
   padding-bottom: 5px;
 } */
 
+/* .map {
+  min-width: 50%;
+}
+
+.map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+} */
 
 
 .footer-container {
-  background-color: #E07A5F;
+  background-color: var(--bg-t);
   color: black;
   padding: 1rem;
   font-family: 'Montserrat', sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  
+  margin-top: 50px;
+
 }
 
-.container-info h3 {
+.container-info .footer-h {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
-.container-info {
-  margin: auto;
+footer .container-info {
+  /* margin: auto; */
   grid-column: 1 / 1;
   grid-row: 1;
+  padding: 15px;
 }
 
 footer p {
@@ -226,18 +297,12 @@ footer .contact-info img {
   margin-right: 0.8rem;
 }
 
-.container-map{
+footer .container-map {
   max-width: 300px;
   margin: 0 auto;
   grid-column: 1 / 1;
   grid-row: 2;
 }
-
-/* footer .map {
-  width: 90%;
-  height: 60%;
-
-} */
 
 footer .footer-bar {
   background-color: #173753;
@@ -246,11 +311,13 @@ footer .footer-bar {
 footer .social-icons {
   display: flex;
   margin-top: .5rem;
+  margin-left: 30px;
+
 }
 
 .footer-bar {
   text-align: center;
-  background-color: white;
+  /* background-color: white; */
   color: #fff;
   padding: 1rem;
   font-family: 'Montserrat', sans-serif;
@@ -258,7 +325,7 @@ footer .social-icons {
 
 .footer-bar span,
 .footer-bar a {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 footer .footer-bar a {
@@ -281,59 +348,33 @@ footer .social-icons img {
 
 .hero-div {
   display: block;
-  /* border: 1px solid cyan; */
   margin: 10px auto;
-  /* max-width: 70vw;
-  height: 350px; */
 }
-
-/* .hero-ph {
-  display: block;
-  margin: 0 auto;
-  border: 1px dashed #000;
-  background-color: #ccc;
-  width: 100%;
-  height: 350px;
-} */
-
-/* #hero-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-} */
 
 .hero-pic img {
   max-width: 100%;
   max-height: 100%;
+  /* padding-bottom: 25px */
+;
 }
 
+/* -------------- PRESTON PAGE  ---------------*/
 
 /* ---------- WEATHER SUMMARY SECTION ---------- */
 .weathersummary {
-  /* position: absolute; */
-  /* top: 50px;
-  left: 50px; */
   background: #e3f2fd;
-  /* background: linear-gradient(90deg, rgba(23, 55, 83, 1) 0%, rgba(227, 242, 253, 1) 100%); */
-  /* background: radial-gradient(circle, rgba(23, 55, 83, 1) 0%, rgba(227, 242, 253, 1) 100%); */
-  border: rgba(23, 55, 83, 1);
-  padding: 1rem;
-  /* box-shadow: 0 0 30px #ccc; */
+  padding: 1.5rem;
+  margin: 0 auto;
 }
 
 .weathersummary h3 {
-  margin-bottom: 5px;
-  margin-top: 0px;
-  /* padding: .5px; */
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .ws-table {
   font-family: 'Montserrat', sans-serif;
   color: black;
   margin: 0 auto;
-
 }
 
 .title-data {
@@ -344,98 +385,84 @@ footer .social-icons img {
 .sum-data {
   width: 50%;
   padding-left: 5px;
-  color: black;
 }
 
-/* ----------- FORECAST SECTION ----------- */
+/* ----------- FORECAST SECTION TABLE ----------- */
 .forecast-flex {
   display: flex;
-  /* flex-direction: row; */
-  /* let us combine row and wrap with flow */
   flex-flow: row wrap;
-  padding: 1rem;
+  /* padding: 1rem; */
   font-family: 'Montserrat', sans-serif;
+  margin: 0 0 50px 0;
 }
 
 .flex-col {
-  /* flex: 1 1 auto; */
   flex: 1 1 auto;
   background-color: white;
+  border: solid .5px var(--accent-color-green)
 }
 
-.flex-col,
-.column-col,
-.grid-col,
-.col-head {
-  /* border-bottom: 1px solid #173753; */
-  /* border-left: 1px solid #173753; */
-  /* border-right: 1px solid #173753; */
-  border: 1px solid #173753;
-  text-align: center;
-}
-
-/* .flex,
-.column,
-.grid {
-  border-right: 1px solid #173753;
-} */
-
-.col-head {
-  display: block;
-  padding: 5px;
-  /* border-bottom: 1px solid #173753; */
-  text-align: center;
+#forecast-h2{
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
 }
 
 .data {
   display: block;
-  padding: 0 5px 5px;
-  font-size: 0.8rem;
+  padding: 5px 5px;
+  font-size: 1rem;
   text-align: center;
 }
 
-.col-head,
-th {
-  font-weight: 700;
+.col-head{
+  display: block;
+  padding: 5px;
+  text-align: center;
+  font-weight: 1000;
   font-size: 1rem;
-  background-color: #173753;
-  color: white;
+  background-color: var(--accent-color-green);
+  color: black;
 }
 
 /* ------------ ARCTICLE SECTION ------------- */
 .article-div {
   margin: 10px auto;
-  /* max-width: 70vw; */
-  /* height: 400px; */
-  /* border: 1px solid black; */
-  padding: 1.5rem;
-  /* background-color: beige; */
-  /* margin: 0; */
-  /* padding: .3rem; */
+  padding: 1.6rem;
   background-color: #eee;
-  /* font: 1rem 'Fira Sans', sans-serif; */
   font-family: 'Montserrat', sans-serif;
-  word-break: keep-all;
-  text-overflow: ellipsis;
   overflow: hidden;
   text-align: left;
+  /* border-radius: 10px; */
+  max-width: 340px;
+  font-size: .9rem;
+
 }
 
-.article-div.articles img {
+.article-heading h3,h4 {
+  margin-bottom: 5px;
+}
+
+.article-img{
+  padding-top: 1rem;
   display: block;
   margin: 0 auto;
+  width: 260px;
+  border-radius: 25% 10%;
+  filter: drop-shadow(0 0 5 #000);
 }
+
+
 
 /* ------------- POPUP BANNER --------------- */
 
 #banner {
-  /* background-color: rgba(255, 183, 3, 1); */
   background-color: #FFD639;
   padding: 1rem;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
-  /* display: none; */
+  display: none;
 }
 
 #more {
@@ -480,7 +507,7 @@ figure.gallery-image img {
 .gallery-cap {
   background-color: #fff;
   text-align: center;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: italic;
   padding: 8px;
 }
@@ -512,16 +539,20 @@ section.gallery {
 }
 
 
-/* ----------- STORM CENTER PAGE | REPORT A STORM FORM ------------  */ 
+/* ----------- STORM CENTER PAGE | REPORT A STORM FORM ------------  */
+.home.page-title {
+  letter-spacing: 5px;
+  margin: 0;
+}
 
-.form-container{
+.form-container {
   max-width: 760px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .storm-form {
   margin: 0 auto;
-  font-family: "Monserrat" ,sans-serif;
+  font-family: "Monserrat", sans-serif;
   /* margin-bottom: 20px; */
   /* background-color: #E07A5F; */
   /* background-color:#e3f2fd; */
@@ -542,13 +573,16 @@ form legend {
   padding: 0 .5rem;
 }
 
-form label.top, form label.sbs, form div{
+form label.top,
+form label.sbs,
+form div {
   display: block;
   padding-top: 1rem;
   color: #9F3214;
 }
 
-form label.top input, form label.top select{
+form label.top input,
+form label.top select {
   -webkit-appearance: none;
   display: block;
   font-size: 1rem;
@@ -561,13 +595,15 @@ form label.top input, form label.top select{
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-form label.sbs #rating{
+form label.sbs #rating {
   display: block;
   padding: .75rem 0;
 }
-form fieldset .radio{
+
+form fieldset .radio {
   color: black;
 }
+
 form label textarea {
   display: block;
   padding: .8rem;
@@ -614,3 +650,86 @@ form label.top input:required:valid {
   font-family: 'Montserrat', sans-serif;
 }
 
+
+/* ----- HOME page styling ------- */
+
+.town-div {
+  border: none;
+  border-radius: 10px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  background-color: whitesmoke;
+  filter: drop-shadow(0 0 0 #000);
+  overflow: hidden;
+}
+
+.town-img {
+  max-width: 100%;
+  max-height: 100%;
+  /* max-width: 350px; */
+  filter: drop-shadow(0 0 0 #000);
+}
+
+.text-div {
+  width: 100%;
+}
+
+.town-p {
+  font-family: var(--t-text);
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.town-h2 {
+  color: white;
+  width: 100%;
+  background-color: var(--accent-color-green);
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  /* margin-bottom: 10px; */
+}
+
+.town-motto {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  margin-bottom: 12px;
+}
+
+/* ---- HOME PAGE - ARTICLE SECTION */
+.events-title,
+.info-title {
+  color: black;
+  padding: 20px;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  padding-bottom: 0px
+}
+
+#frame {
+  border: 3px dotted;
+  width: 300px;
+  height: 300px;
+}
+
+
+.town-event {
+  margin: 30px auto;
+}
+
+.h3-title {
+  text-decoration: underline #D5C020 3px;
+  /* text-decoration-style: dotted #D5C020; */
+}
+
+.town-event p {
+  font-size: 14px;
+}
