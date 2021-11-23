@@ -13,23 +13,15 @@
 
 }
 
-/* * {box-sizing: border-box;} */
 
 /* ----- GENERAL Header, Nav, Main, Footer ------ */
 
-/* header,
-nav,
-footer  */
 main {
   margin: 0 auto;
-  max-width: 100vw;
+  max-width: 100%;
 }
 
-/* --------------- MAIN PAGE TITLE ------------- */
-/* h2 {
-  margin-top: 20px;
-  margin-bottom: 0;
-} */
+/* --------------- MAIN TITLE ------------- */
 
 .page-title {
   padding: 30px;
@@ -40,7 +32,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--h-text);
 }
 
 h3,
@@ -58,14 +50,13 @@ header {
 
 header,
 footer {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--h-text);
   background-color: #173753;
   color: white;
 }
 
 header img {
   width: 70px;
-  /* height: auto; */
 }
 
 header picture {
@@ -84,15 +75,14 @@ header picture {
   letter-spacing: 4px;
 }
 
-/* ----- m = moto??? ------------- */
+/* ----- m ------------- */
 .m {
   font-style: italic;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--t-text);
   letter-spacing: 1px;
   color: white;
-  margin-left: 10px;
-  /* font-size: 0.9rem; */
-  font-size: 12px;
+  margin-left: 20px;
+  font-size: 0.9rem;
 }
 
 /* ----------------- '<a>' LINKS ------------------ */
@@ -141,67 +131,16 @@ nav {
   display: block;
 }
 
-.active {
+nav ul li.active {
   background-color: #e3f2fd;
   color: black;
 }
 
-.ham {
-  font-size: 1.2rem;
-}
-
-/* ---------- MENU ICON BUTTON --------- */
-/* .responsiveBtn li {
-  display: block;
-} */
-/* header button {
-  border: none;
-  background-color: var(--accent-color-green);
-  color: white;
-  background-color: transparent;
-  padding: 0.25rem 0.5rem;
-  border: 2px solid white;
-  border-radius: 10px;
-  width: 50px;
-  height: 50px;
-} */
-.menu-container {
-  display: inline-block;
-  cursor: pointer;
-  padding: 3px;
-
-}
-
-.bar1,
-.bar2,
-.bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: var(--accent-color-green);
-  margin: 6px 0;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-  opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
 
 /* -------------  GENRAL PAGE - -------- */
 nav,
 main p {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--t-text);
 }
 
 main {
@@ -215,13 +154,14 @@ body {
   background-color: white;
 }
 
+
 /* ------------------- FOOTER --------------- */
 
 .footer-container {
   background-color: var(--bg-t);
   color: black;
   padding: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--t-text);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -268,16 +208,16 @@ footer .contact-info img {
 }
 
 footer .container-map {
+  margin: 0 auto;
   grid-column: 1 / 1;
   grid-row: 2;
   padding: 15px;
 }
 
-footer .map{
+footer .map {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-
 }
 
 footer .footer-bar {
@@ -293,10 +233,9 @@ footer .social-icons {
 
 .footer-bar {
   text-align: center;
-  /* background-color: white; */
   color: #fff;
   padding: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--t-text);
 }
 
 .footer-bar span,
@@ -330,11 +269,8 @@ footer .social-icons img {
 .hero-pic img {
   max-width: 100%;
   max-height: 100%;
-  /* padding-bottom: 25px */
-  ;
+  padding-bottom: 25px;
 }
-
-/* -------------- PRESTON PAGE  ---------------*/
 
 /* ---------- WEATHER SUMMARY SECTION ---------- */
 .weathersummary {
@@ -348,7 +284,7 @@ footer .social-icons img {
 }
 
 .ws-table {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--t-text);
   color: black;
   margin: 0 auto;
 }
@@ -367,8 +303,7 @@ footer .social-icons img {
 .forecast-flex {
   display: flex;
   flex-flow: row wrap;
-  /* padding: 1rem; */
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--t-text);
   margin: 0 0 50px 0;
 }
 
@@ -406,10 +341,9 @@ footer .social-icons img {
   margin: 10px auto;
   padding: 1.6rem;
   background-color: #eee;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--t-text);
   overflow: hidden;
   text-align: left;
-  /* border-radius: 10px; */
   max-width: 340px;
   font-size: .9rem;
 
@@ -437,7 +371,7 @@ h4 {
   background-color: #FFD639;
   padding: 1rem;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--t-text);
   font-size: 1.2rem;
   display: none;
 }
@@ -484,7 +418,7 @@ figure.gallery-image img {
 .gallery-cap {
   background-color: #fff;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: var(--t-text);
   font-style: italic;
   padding: 8px;
 }
@@ -517,7 +451,7 @@ section.gallery {
 
 
 /* ----------- STORM CENTER PAGE | REPORT A STORM FORM ------------  */
-.home.page-title {
+main .home.page-title {
   letter-spacing: 5px;
   margin: 0;
 }
@@ -529,11 +463,8 @@ section.gallery {
 
 .storm-form {
   margin: 0 auto;
-  font-family: "Monserrat", sans-serif;
-  /* margin-bottom: 20px; */
-  /* background-color: #E07A5F; */
-  /* background-color:#e3f2fd; */
-  /* padding: 20px; */
+  font-family: var(--t-text);
+
 }
 
 form fieldset {
@@ -605,11 +536,11 @@ input.submitBtn:hover {
 }
 
 form label.top input:required {
-  border-left: #ff5024 solid 5px;
+  border-left: #fc3200 solid 5px;
 }
 
 form label.top input:required:valid {
-  border-left: #2a9d8f solid 5px;
+  border-left: #00f148 solid 5px;
 }
 
 /* ------------- THANK YOU MESSAGE PAGE ----------- */
@@ -617,14 +548,13 @@ form label.top input:required:valid {
   max-width: 760px;
   margin: 0 auto;
   margin-bottom: 30px;
-  /* margin-bottom: 30px; */
   text-align: center;
   color: black;
   font-size: 18px;
   background-color: wheat;
   padding: 34px;
   line-height: 1.4em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--t-text);
 }
 
 
@@ -669,15 +599,12 @@ form label.top input:required:valid {
   text-align: center;
   padding: 10px 0;
   margin: 0;
-  /* margin-bottom: 10px; */
 }
 
 .town-motto {
   text-align: center;
   font-size: 16px;
   font-style: italic;
-  /* padding-left: 30px;
-  padding-right: 30px; */
   margin-bottom: 12px;
 }
 
@@ -704,7 +631,6 @@ form label.top input:required:valid {
 
 .h3-title {
   text-decoration: underline #D5C020 3px;
-  /* text-decoration-style: dotted #D5C020; */
 }
 
 .town-event p {

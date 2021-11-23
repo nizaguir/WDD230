@@ -13,23 +13,15 @@
 
 }
 
-/* * {box-sizing: border-box;} */
 
 /* ----- GENERAL Header, Nav, Main, Footer ------ */
 
-/* header,
-nav,
-footer  */
 main {
   margin: 0 auto;
-  max-width: 100vw;
+  max-width: 100%;
 }
 
 /* --------------- MAIN PAGE TITLE ------------- */
-/* h2 {
-  margin-top: 20px;
-  margin-bottom: 0;
-} */
 
 .page-title {
   padding: 30px;
@@ -40,7 +32,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--h-text);
 }
 
 h3,
@@ -58,17 +50,16 @@ header {
 
 header,
 footer {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--h-text);
   background-color: #173753;
   color: white;
 }
 
 header img {
   width: 70px;
-  /* height: auto; */
 }
 
-picture{
+picture {
   width: 70px;
   height: 70px;
 }
@@ -84,10 +75,10 @@ picture{
   letter-spacing: 4px;
 }
 
-/* ----- m = moto??? ------------- */
+/* ----- moto------------- */
 .m {
   font-style: italic;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--t-text);
   letter-spacing: 1px;
   color: white;
   margin-left: 20px;
@@ -145,13 +136,11 @@ nav ul li.active {
   color: black;
 }
 
-.ham {
-  font-size: 1.2rem;
-}
 
+/* -------------  GENRAL PAGE - -------- */
 nav,
 main p {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--t-text);
 }
 
 main {
@@ -167,39 +156,12 @@ body {
 
 /* ------------------- FOOTER --------------- */
 
-/* Footer Map Styling */
-/* footer {
-  display: block;
-  text-align: center;
-  justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: 10px;
-}
-
-footer p {
-  margin: 0;
-  padding-bottom: 5px;
-} */
-
-/* .map {
-  min-width: 50%;
-}
-
-.map iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: 0;
-} */
-
 
 .footer-container {
-  /* background-color: #E07A5F; */
   background-color: var(--bg-t);
   color: black;
   padding: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--t-text);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -213,7 +175,6 @@ footer p {
 }
 
 footer .container-info {
-  /* margin: auto; */
   grid-column: 1 / 1;
   grid-row: 1;
   padding: 15px;
@@ -221,7 +182,6 @@ footer .container-info {
 
 footer p {
   font-size: 1rem;
-  /* padding-bottom: .5rem; */
 }
 
 footer .contact-info {
@@ -236,7 +196,6 @@ footer .contact-info p {
   text-decoration: none;
   color: black;
   margin: 0;
-  /* font-size: .8rem; */
 }
 
 footer .contact-info a:hover {
@@ -249,10 +208,16 @@ footer .contact-info img {
 }
 
 footer .container-map {
-  max-width: 300px;
   margin: 0 auto;
   grid-column: 1 / 1;
   grid-row: 2;
+  padding: 15px;
+}
+
+footer .map {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 footer .footer-bar {
@@ -268,10 +233,9 @@ footer .social-icons {
 
 .footer-bar {
   text-align: center;
-  /* background-color: white; */
   color: #fff;
   padding: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--t-text);
 }
 
 .footer-bar span,
@@ -299,27 +263,8 @@ footer .social-icons img {
 
 .hero-div {
   display: block;
-  /* border: 1px solid cyan; */
   margin: 10px auto;
-  /* max-width: 70vw;
-  height: 350px; */
 }
-
-/* .hero-ph {
-  display: block;
-  margin: 0 auto;
-  border: 1px dashed #000;
-  background-color: #ccc;
-  width: 100%;
-  height: 350px;
-} */
-
-/* #hero-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-} */
 
 .hero-pic img {
   max-width: 100%;
@@ -330,29 +275,19 @@ footer .social-icons img {
 
 /* ---------- WEATHER SUMMARY SECTION ---------- */
 .weathersummary {
-  /* position: absolute; */
-  /* top: 50px;
-  left: 50px; */
   background: #e3f2fd;
-  /* background: linear-gradient(90deg, rgba(23, 55, 83, 1) 0%, rgba(227, 242, 253, 1) 100%); */
-  /* background: radial-gradient(circle, rgba(23, 55, 83, 1) 0%, rgba(227, 242, 253, 1) 100%); */
-  border: rgba(23, 55, 83, 1);
-  padding: 1rem;
-  /* box-shadow: 0 0 30px #ccc; */
+  padding: 1.5rem;
+  margin: 0 auto;
 }
 
 .weathersummary h3 {
-  margin-bottom: 5px;
-  margin-top: 0px;
-  /* padding: .5px; */
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .ws-table {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--t-text);
   color: black;
   margin: 0 auto;
-
 }
 
 .title-data {
@@ -363,96 +298,79 @@ footer .social-icons img {
 .sum-data {
   width: 50%;
   padding-left: 5px;
-  color: black;
 }
 
-/* ----------- FORECAST SECTION ----------- */
+/* ----------- FORECAST SECTION TABLE ----------- */
 .forecast-flex {
   display: flex;
-  /* flex-direction: row; */
-  /* let us combine row and wrap with flow */
   flex-flow: row wrap;
-  padding: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--t-text);
+  margin: 0 0 50px 0;
 }
 
 .flex-col {
-  /* flex: 1 1 auto; */
   flex: 1 1 auto;
   background-color: white;
+  border: solid .5px var(--accent-color-green)
 }
 
-.flex-col,
-.column-col,
-.grid-col,
-.col-head {
-  /* border-bottom: 1px solid #173753; */
-  /* border-left: 1px solid #173753; */
-  /* border-right: 1px solid #173753; */
-  border: 1px solid #173753;
-  text-align: center;
-}
-
-/* .flex,
-.column,
-.grid {
-  border-right: 1px solid #173753;
-} */
-
-.col-head {
-  display: block;
-  padding: 5px;
-  /* border-bottom: 1px solid #173753; */
-  text-align: center;
+#forecast-h2 {
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
 }
 
 .data {
   display: block;
-  padding: 0 5px 5px;
-  font-size: 0.8rem;
+  padding: 5px 5px;
+  font-size: 1rem;
   text-align: center;
 }
 
-.col-head,
-th {
-  font-weight: 700;
+.col-head {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  font-weight: 1000;
   font-size: 1rem;
-  background-color: #173753;
-  color: white;
+  background-color: var(--accent-color-green);
+  color: black;
 }
 
 /* ------------ ARCTICLE SECTION ------------- */
 .article-div {
   margin: 10px auto;
-  /* max-width: 70vw; */
-  /* height: 400px; */
-  /* border: 1px solid black; */
-  padding: 1.5rem;
-  /* background-color: beige; */
-  /* margin: 0; */
-  /* padding: .3rem; */
+  padding: 1.6rem;
   background-color: #eee;
-  /* font: 1rem 'Fira Sans', sans-serif; */
-  font-family: 'Montserrat', sans-serif;
-  word-break: keep-all;
-  text-overflow: ellipsis;
+  font-family: var(--t-text);
   overflow: hidden;
   text-align: left;
+  max-width: 340px;
+  font-size: .9rem;
+
 }
 
-.article-div.articles img {
+.article-heading h3,
+h4 {
+  margin-bottom: 5px;
+}
+
+.article-img {
+  padding-top: 1rem;
   display: block;
   margin: 0 auto;
+  width: 260px;
+  border-radius: 25% 10%;
+  filter: drop-shadow(0 0 5 #000);
 }
 
 /* ------------- POPUP BANNER --------------- */
 
 #banner {
-  /* background-color: rgba(255, 183, 3, 1); */
   background-color: #FFD639;
   padding: 1rem;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--t-text);
   font-size: 1.2rem;
   display: none;
 }
@@ -499,7 +417,7 @@ figure.gallery-image img {
 .gallery-cap {
   background-color: #fff;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: var(--t-text);
   font-style: italic;
   padding: 8px;
 }
@@ -515,7 +433,7 @@ section.gallery {
 }
 
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -528,11 +446,11 @@ section.gallery {
 .fadeIn {
   animation-name: fadeIn;
   animation-duration: 3s;
-}
+} */
 
 
 /* ----------- STORM CENTER PAGE | REPORT A STORM FORM ------------  */
-.home.page-title {
+main .home.page-title {
   letter-spacing: 5px;
   margin: 0;
 }
@@ -544,11 +462,8 @@ section.gallery {
 
 .storm-form {
   margin: 0 auto;
-  font-family: "Monserrat", sans-serif;
-  /* margin-bottom: 20px; */
-  /* background-color: #E07A5F; */
-  /* background-color:#e3f2fd; */
-  /* padding: 20px; */
+  font-family: var(--t-text);
+
 }
 
 form fieldset {
@@ -620,11 +535,11 @@ input.submitBtn:hover {
 }
 
 form label.top input:required {
-  border-left: #ff5024 solid 5px;
+  border-left: #fc3200 solid 5px;
 }
 
 form label.top input:required:valid {
-  border-left: #2a9d8f solid 5px;
+  border-left: #00f148 solid 5px;
 }
 
 /* ------------- THANK YOU MESSAGE PAGE ----------- */
@@ -632,14 +547,13 @@ form label.top input:required:valid {
   max-width: 760px;
   margin: 0 auto;
   margin-bottom: 30px;
-  /* margin-bottom: 30px; */
   text-align: center;
   color: black;
   font-size: 18px;
   background-color: wheat;
   padding: 34px;
   line-height: 1.4em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--t-text);
 }
 
 
@@ -684,15 +598,12 @@ form label.top input:required:valid {
   text-align: center;
   padding: 10px 0;
   margin: 0;
-  /* margin-bottom: 10px; */
 }
 
 .town-motto {
   text-align: center;
   font-size: 16px;
   font-style: italic;
-  /* padding-left: 30px;
-  padding-right: 30px; */
   margin-bottom: 12px;
 }
 
@@ -719,7 +630,6 @@ form label.top input:required:valid {
 
 .h3-title {
   text-decoration: underline #D5C020 3px;
-  /* text-decoration-style: dotted #D5C020; */
 }
 
 .town-event p {
