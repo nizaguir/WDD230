@@ -389,7 +389,7 @@ h4 {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #FFD639;
+  background-color:var(--accent-color-green);
   color: black;
   cursor: pointer;
   padding: 15px;
@@ -397,7 +397,9 @@ h4 {
 }
 
 #goTopBtn:hover {
-  background-color: #e3f2fd;
+  background-color: var(--accent-color-green);
+  border-style: solid;
+  border-color: var(--bg-1);
 }
 
 /* ---------- GALLERY PAGE -------------- */
