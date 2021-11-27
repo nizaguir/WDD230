@@ -59,7 +59,6 @@
         font-size: 0.9rem;
     }
 
-
     footer .footer-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -96,8 +95,9 @@
     .hero-div {
         position: relative;
         margin: 10px auto;
-        max-width: 70vw;
+        max-width: 80vw;
     }
+
 
     .weathersummary {
         position: absolute;
@@ -105,7 +105,7 @@
         left: 30px;
         border: rgba(23, 55, 83, 1);
         border-radius: 5px;
-        padding: 1rem;
+        padding: 2rem;
         box-shadow: 0 0 20px #ccc;
         /* Change width of weather summary??? */
         width: 200px;
@@ -179,7 +179,6 @@
         animation-name: fadeIn;
         animation-duration: 3s;
     }
-
 
     /* ----------- STORM REPORT PAGE ------------ */
 
