@@ -4,7 +4,7 @@ const apiURL =
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    // console.log(jsObject);
 
     // Add current conditions description
     let tempKelvin = jsObject.list[0].main.temp;

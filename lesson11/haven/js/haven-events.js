@@ -5,7 +5,7 @@ fetch(infoURL)
     return response.json();
   })
   .then((jsonObject) => {
-    console.table(jsonObject);
+    // console.table(jsonObject);
     const towns = jsonObject["towns"];
     towns.forEach((town) => {
       if (town.name == "Fish Haven") {
