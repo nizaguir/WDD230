@@ -608,6 +608,7 @@ form label.top input:required:valid {
   font-size: 16px;
   font-style: italic;
   margin-bottom: 12px;
+  font-weight: 500;
 }
 
 /* ---- HOME PAGE - ARTICLE SECTION */
