@@ -360,7 +360,7 @@ h4 {
   margin: 0 auto;
   width: 260px;
   border-radius: 25% 10%;
-  filter: drop-shadow(0 0 5 #000);
+  filter: drop-shadow(0 0 5px rgb(163, 162, 162));
 }
 
 
